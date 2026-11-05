@@ -1,0 +1,25 @@
+[
+  {
+    "titolo": "Pagina di prova",
+    "slug": "prova",
+    "sottotitolo": "Modificami o cancellami dal pannello Pages CMS.",
+    "menu": false,
+    "blocchi": [
+      {
+        "tipo": "testo",
+        "titolo": "Benvenuto",
+        "testo": "<p>Questa è una <strong>pagina di prova</strong>. Colori e sfondo sono quelli del sito, sempre uguali.</p>"
+      },
+      {
+        "tipo": "citazione",
+        "testo": "Libertà, Uguaglianza, Amore.",
+        "autore": "Il Noskynismo"
+      },
+      {
+        "tipo": "pulsante",
+        "etichetta": "Torna alla Home",
+        "link": "#home"
+      }
+    ]
+  }
+]

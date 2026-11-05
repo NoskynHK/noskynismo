@@ -1,0 +1,188 @@
+{
+  "nav_home": {
+    "it": "Home",
+    "en": "Home",
+    "de": "Start",
+    "ru": "Главная"
+  },
+  "nav_manifesto": {
+    "it": "Manifesto",
+    "en": "Manifesto",
+    "de": "Manifest",
+    "ru": "Манифест"
+  },
+  "nav_rights": {
+    "it": "Diritti",
+    "en": "Rights",
+    "de": "Rechte",
+    "ru": "Права"
+  },
+  "nav_economy": {
+    "it": "Economia",
+    "en": "Economy",
+    "de": "Wirtschaft",
+    "ru": "Экономика"
+  },
+  "nav_culture": {
+    "it": "Cultura",
+    "en": "Culture",
+    "de": "Kultur",
+    "ru": "Культура"
+  },
+  "nav_anthem": {
+    "it": "Inno",
+    "en": "Anthem",
+    "de": "Hymne",
+    "ru": "Гимн"
+  },
+  "nav_card": {
+    "it": "Tessera",
+    "en": "Card",
+    "de": "Karte",
+    "ru": "Билет"
+  },
+  "nav_join": {
+    "it": "Partecipa",
+    "en": "Join in",
+    "de": "Mitmachen",
+    "ru": "Участвуй"
+  },
+  "ui_menu": {
+    "it": "Apri il menu",
+    "en": "Open menu",
+    "de": "Menü öffnen",
+    "ru": "Открыть меню"
+  },
+  "ui_theme": {
+    "it": "Cambia tema chiaro/scuro",
+    "en": "Toggle light/dark theme",
+    "de": "Hell/Dunkel umschalten",
+    "ru": "Светлая/тёмная тема"
+  },
+  "ui_top": {
+    "it": "Torna su",
+    "en": "Back to top",
+    "de": "Nach oben",
+    "ru": "Наверх"
+  },
+  "ui_close": {
+    "it": "Chiudi",
+    "en": "Close",
+    "de": "Schließen",
+    "ru": "Закрыть"
+  },
+  "ui_skip": {
+    "it": "Vai al contenuto",
+    "en": "Skip to content",
+    "de": "Zum Inhalt springen",
+    "ru": "К содержимому"
+  },
+  "ui_lang": {
+    "it": "Lingua",
+    "en": "Language",
+    "de": "Sprache",
+    "ru": "Язык"
+  },
+  "ui_emblem": {
+    "it": "Emblema del Noskynismo",
+    "en": "Emblem of Noskynismo",
+    "de": "Emblem des Noskynismo",
+    "ru": "Эмблема носкинизма"
+  },
+  "ui_share": {
+    "it": "Condividi",
+    "en": "Share",
+    "de": "Teilen",
+    "ru": "Поделиться"
+  },
+  "ui_copied": {
+    "it": "Link copiato!",
+    "en": "Link copied!",
+    "de": "Link kopiert!",
+    "ru": "Ссылка скопирована!"
+  },
+  "title_home": {
+    "it": "Il Noskynismo — Manifesto del Movimento",
+    "en": "Noskynismo — Manifesto of the Movement",
+    "de": "Noskynismo — Manifest der Bewegung",
+    "ru": "Носкинизм — Манифест движения"
+  },
+  "title_manifesto": {
+    "it": "Manifesto — Il Noskynismo",
+    "en": "Manifesto — Noskynismo",
+    "de": "Manifest — Noskynismo",
+    "ru": "Манифест — Носкинизм"
+  },
+  "title_rights": {
+    "it": "Diritti — Il Noskynismo",
+    "en": "Rights — Noskynismo",
+    "de": "Rechte — Noskynismo",
+    "ru": "Права — Носкинизм"
+  },
+  "title_economy": {
+    "it": "Economia — Il Noskynismo",
+    "en": "Economy — Noskynismo",
+    "de": "Wirtschaft — Noskynismo",
+    "ru": "Экономика — Носкинизм"
+  },
+  "title_culture": {
+    "it": "Cultura & Simbolo — Il Noskynismo",
+    "en": "Culture & Symbol — Noskynismo",
+    "de": "Kultur & Symbol — Noskynismo",
+    "ru": "Культура и символ — Носкинизм"
+  },
+  "title_anthem": {
+    "it": "L'Inno — Il Noskynismo",
+    "en": "The Anthem — Noskynismo",
+    "de": "Die Hymne — Noskynismo",
+    "ru": "Гимн — Носкинизм"
+  },
+  "title_card": {
+    "it": "Tessera — Il Noskynismo",
+    "en": "Membership Card — Noskynismo",
+    "de": "Mitgliedskarte — Noskynismo",
+    "ru": "Членский билет — Носкинизм"
+  },
+  "title_join": {
+    "it": "Partecipa — Il Noskynismo",
+    "en": "Join in — Noskynismo",
+    "de": "Mitmachen — Noskynismo",
+    "ru": "Участвуй — Носкинизм"
+  },
+  "meta_desc": {
+    "it": "Il Noskynismo: l'utopia di libertà, uguaglianza e amore di NoskynHK & Sig.Lev. Manifesto, diritti, economia, cultura, inno e tessera.",
+    "en": "Noskynismo: the utopia of freedom, equality and love by NoskynHK & Sig.Lev. Manifesto, rights, economy, culture, anthem and membership card.",
+    "de": "Noskynismo: die Utopie von Freiheit, Gleichheit und Liebe von NoskynHK & Sig.Lev. Manifest, Rechte, Wirtschaft, Kultur, Hymne und Mitgliedskarte.",
+    "ru": "Носкинизм: утопия свободы, равенства и любви от NoskynHK и Sig.Lev. Манифест, права, экономика, культура, гимн и членский билет."
+  },
+  "title_verify": {
+    "it": "Verifica tessera — Il Noskynismo",
+    "en": "Verify card — Noskynismo",
+    "de": "Karte prüfen — Noskynismo",
+    "ru": "Проверка билета — Носкинизм"
+  },
+  "f_text": {
+    "it": "<strong>Il Noskynismo</strong> — un'idea di NoskynHK &amp; Sig.Lev. Un progetto scolastico, completo.",
+    "en": "<strong>Noskynismo</strong> — an idea by NoskynHK &amp; Sig.Lev. A school project, complete.",
+    "de": "<strong>Noskynismo</strong> — eine Idee von NoskynHK &amp; Sig.Lev. Ein Schulprojekt, vollendet.",
+    "ru": "<strong>Носкинизм</strong> — идея NoskynHK &amp; Sig.Lev. Школьный проект, завершённый."
+  },
+  "x_title": {
+    "it": "Свобода",
+    "en": "Свобода",
+    "de": "Свобода",
+    "ru": "Свобода"
+  },
+  "x_sub": {
+    "it": "Svoboda · Libertà",
+    "en": "Svoboda · Freedom",
+    "de": "Svoboda · Freiheit",
+    "ru": "Svoboda · Libertà"
+  },
+  "x_text": {
+    "it": "Hai trovato il segreto più nascosto. La libertà non si regala: si cerca.",
+    "en": "You found the best-hidden secret. Freedom isn't handed out: you go looking for it.",
+    "de": "Du hast das bestgehütete Geheimnis gefunden. Freiheit wird nicht verschenkt: man sucht sie.",
+    "ru": "Ты нашёл самый тайный секрет. Свободу не дарят: её ищут."
+  }
+}

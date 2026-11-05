@@ -1,0 +1,182 @@
+{
+  "k_title": {
+    "it": "La Tessera del Movimento",
+    "en": "The Movement's Membership Card",
+    "de": "Die Mitgliedskarte der Bewegung",
+    "ru": "Членский билет движения"
+  },
+  "k_sub": {
+    "it": "Scrivi il tuo nome, crea la tua tessera di adesione al Noskynismo e scaricala con un clic.",
+    "en": "Type your name, create your Noskynismo membership card and download it with one click.",
+    "de": "Schreib deinen Namen, erstelle deine Noskynismo-Mitgliedskarte und lade sie mit einem Klick herunter.",
+    "ru": "Напиши своё имя, создай членский билет носкинизма и скачай его одним щелчком."
+  },
+  "k_name": {
+    "it": "Nome da inserire sulla tessera",
+    "en": "Name to put on the card",
+    "de": "Name auf der Karte",
+    "ru": "Имя для билета"
+  },
+  "k_name_ph": {
+    "it": "Es. Mario Rossi",
+    "en": "E.g. Alex Smith",
+    "de": "z. B. Max Mustermann",
+    "ru": "Напр. Иван Иванов"
+  },
+  "k_role": {
+    "it": "Ruolo",
+    "en": "Role",
+    "de": "Rolle",
+    "ru": "Роль"
+  },
+  "k_r1": {
+    "it": "Cittadino/a Noskyniano/a",
+    "en": "Noskynian Citizen",
+    "de": "Noskynische/r Bürger/in",
+    "ru": "Гражданин/ка носкинизма"
+  },
+  "k_r2": {
+    "it": "Simpatizzante",
+    "en": "Supporter",
+    "de": "Sympathisant/in",
+    "ru": "Сторонник/ца"
+  },
+  "k_r3": {
+    "it": "Sostenitore / Sostenitrice",
+    "en": "Patron",
+    "de": "Unterstützer/in",
+    "ru": "Покровитель/ница"
+  },
+  "k_code_l": {
+    "it": "Hai un codice segreto?",
+    "en": "Got a secret code?",
+    "de": "Hast du einen Geheimcode?",
+    "ru": "Есть секретный код?"
+  },
+  "k_code_ph": {
+    "it": "Codice",
+    "en": "Code",
+    "de": "Code",
+    "ru": "Код"
+  },
+  "k_code_btn": {
+    "it": "Sblocca",
+    "en": "Unlock",
+    "de": "Freischalten",
+    "ru": "Открыть"
+  },
+  "k_code_ok": {
+    "it": "Sbloccato! Ora puoi scrivere il tuo ruolo personalizzato.",
+    "en": "Unlocked! You can now write your own custom role.",
+    "de": "Freigeschaltet! Du kannst jetzt deine eigene Rolle schreiben.",
+    "ru": "Открыто! Теперь можно написать собственную роль."
+  },
+  "k_code_bad": {
+    "it": "Codice errato.",
+    "en": "Wrong code.",
+    "de": "Falscher Code.",
+    "ru": "Неверный код."
+  },
+  "k_custom": {
+    "it": "Ruolo personalizzato",
+    "en": "Custom role",
+    "de": "Eigene Rolle",
+    "ru": "Своя роль"
+  },
+  "k_custom_ph": {
+    "it": "Es. Ministro/a delle Gonne",
+    "en": "E.g. Minister of Skirts",
+    "de": "z. B. Minister/in für Röcke",
+    "ru": "Напр. Министр юбок"
+  },
+  "k_dl": {
+    "it": "Scarica la tessera (PNG)",
+    "en": "Download the card (PNG)",
+    "de": "Karte herunterladen (PNG)",
+    "ru": "Скачать билет (PNG)"
+  },
+  "k_saved": {
+    "it": "Tessera scaricata!",
+    "en": "Card downloaded!",
+    "de": "Karte heruntergeladen!",
+    "ru": "Билет скачан!"
+  },
+  "k_err": {
+    "it": "Non sono riuscito a creare l'immagine. Riprova.",
+    "en": "Couldn't create the image. Try again.",
+    "de": "Das Bild konnte nicht erstellt werden. Versuch es erneut.",
+    "ru": "Не удалось создать изображение. Попробуй ещё раз."
+  },
+  "k_cv_head": {
+    "it": "TESSERA DI ADESIONE",
+    "en": "MEMBERSHIP CARD",
+    "de": "MITGLIEDSKARTE",
+    "ru": "ЧЛЕНСКИЙ БИЛЕТ"
+  },
+  "k_cv_issued": {
+    "it": "Intestata a",
+    "en": "Issued to",
+    "de": "Ausgestellt auf",
+    "ru": "Выдан на имя"
+  },
+  "k_cv_role": {
+    "it": "Ruolo",
+    "en": "Role",
+    "de": "Rolle",
+    "ru": "Роль"
+  },
+  "k_cv_since": {
+    "it": "Membro dal",
+    "en": "Member since",
+    "de": "Mitglied seit",
+    "ru": "Участник с"
+  },
+  "k_cv_default": {
+    "it": "Nome Cognome",
+    "en": "Your Name",
+    "de": "Dein Name",
+    "ru": "Имя Фамилия"
+  },
+  "k_cv_motto": {
+    "it": "“Libertà” — Fond. NoskynHK & Sig. Lev.",
+    "en": "“Libertà” — Founded by NoskynHK & Sig. Lev.",
+    "de": "„Libertà“ — Gegr. von NoskynHK & Sig. Lev.",
+    "ru": "«Libertà» — Осн. NoskynHK & Sig. Lev."
+  },
+  "k_verify": {
+    "it": "Verifica una tessera →",
+    "en": "Verify a card →",
+    "de": "Eine Karte prüfen →",
+    "ru": "Проверить билет →"
+  },
+  "k_note": {
+    "it": "L'immagine viene creata sul tuo dispositivo: il tuo nome non viene inviato a nessuno.",
+    "en": "The image is created on your device: your name is not sent to anyone.",
+    "de": "Das Bild wird auf deinem Gerät erstellt: Dein Name wird an niemanden gesendet.",
+    "ru": "Изображение создаётся на твоём устройстве: твоё имя никому не отправляется."
+  },
+  "k_print": {
+    "it": "Stampa la tessera (PDF)",
+    "en": "Print the card (PDF)",
+    "de": "Karte drucken (PDF)",
+    "ru": "Распечатать билет (PDF)"
+  },
+  "k_print_hint": {
+    "it": "PDF A4 con fronte e retro a misura reale (85,6 × 54 mm), pronto per una card in PVC o per un adesivo. Stampa al 100%.",
+    "en": "A4 PDF with front and back at real size (85.6 × 54 mm), ready for a PVC card or a sticker. Print at 100%.",
+    "de": "A4-PDF mit Vorder- und Rückseite in Originalgröße (85,6 × 54 mm), bereit für eine PVC-Karte oder einen Aufkleber. Mit 100 % drucken.",
+    "ru": "PDF формата A4 с лицевой и оборотной стороной в натуральную величину (85,6 × 54 мм), для PVC-карты или наклейки. Печатай в масштабе 100%."
+  },
+  "k_printing": {
+    "it": "Preparo il PDF…",
+    "en": "Preparing the PDF…",
+    "de": "PDF wird erstellt…",
+    "ru": "Готовлю PDF…"
+  },
+  "k_printed": {
+    "it": "PDF pronto!",
+    "en": "PDF ready!",
+    "de": "PDF fertig!",
+    "ru": "PDF готов!"
+  }
+}

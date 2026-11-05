@@ -1,0 +1,122 @@
+{
+  "j_title": {
+    "it": "Partecipa",
+    "en": "Join in",
+    "de": "Mitmachen",
+    "ru": "Участвуй"
+  },
+  "j_sub": {
+    "it": "Il Noskynismo è completo, ma le idee migliori nascono dal popolo. Proponi una modifica o un'aggiunta: leggiamo tutto.",
+    "en": "Noskynismo is complete, but the best ideas come from the people. Suggest a change or an addition: we read everything.",
+    "de": "Der Noskynismo ist vollendet, aber die besten Ideen kommen aus dem Volk. Schlage eine Änderung oder Ergänzung vor: Wir lesen alles.",
+    "ru": "Носкинизм завершён, но лучшие идеи рождаются в народе. Предложи изменение или дополнение: мы читаем всё."
+  },
+  "j_form_t": {
+    "it": "Invia la tua idea",
+    "en": "Send us your idea",
+    "de": "Sende uns deine Idee",
+    "ru": "Отправь свою идею"
+  },
+  "j_name": {
+    "it": "Nome (facoltativo)",
+    "en": "Name (optional)",
+    "de": "Name (optional)",
+    "ru": "Имя (необязательно)"
+  },
+  "j_email": {
+    "it": "Email (facoltativa, se vuoi una risposta)",
+    "en": "Email (optional, if you want a reply)",
+    "de": "E-Mail (optional, falls du eine Antwort möchtest)",
+    "ru": "E-mail (необязательно, если хочешь ответ)"
+  },
+  "j_type": {
+    "it": "Di cosa si tratta?",
+    "en": "What is it about?",
+    "de": "Worum geht es?",
+    "ru": "О чём речь?"
+  },
+  "j_t1": {
+    "it": "Proposta di modifica",
+    "en": "Proposed change",
+    "de": "Änderungsvorschlag",
+    "ru": "Предложение об изменении"
+  },
+  "j_t2": {
+    "it": "Nuova aggiunta al Noskynismo",
+    "en": "New addition to Noskynismo",
+    "de": "Neue Ergänzung zum Noskynismo",
+    "ru": "Новое дополнение к носкинизму"
+  },
+  "j_t3": {
+    "it": "Altro",
+    "en": "Other",
+    "de": "Sonstiges",
+    "ru": "Другое"
+  },
+  "j_msg": {
+    "it": "La tua idea",
+    "en": "Your idea",
+    "de": "Deine Idee",
+    "ru": "Твоя идея"
+  },
+  "j_msg_ph": {
+    "it": "Scrivi qui la tua proposta…",
+    "en": "Write your proposal here…",
+    "de": "Schreibe hier deinen Vorschlag…",
+    "ru": "Напиши здесь своё предложение…"
+  },
+  "j_send": {
+    "it": "Invia",
+    "en": "Send",
+    "de": "Senden",
+    "ru": "Отправить"
+  },
+  "j_sending": {
+    "it": "Invio in corso…",
+    "en": "Sending…",
+    "de": "Wird gesendet…",
+    "ru": "Отправляю…"
+  },
+  "j_ok": {
+    "it": "Grazie! La tua idea è arrivata.",
+    "en": "Thank you! Your idea has arrived.",
+    "de": "Danke! Deine Idee ist angekommen.",
+    "ru": "Спасибо! Твоя идея дошла."
+  },
+  "j_err": {
+    "it": "Qualcosa è andato storto. Riprova tra poco.",
+    "en": "Something went wrong. Please try again shortly.",
+    "de": "Etwas ist schiefgelaufen. Bitte versuche es gleich noch einmal.",
+    "ru": "Что-то пошло не так. Попробуй ещё раз чуть позже."
+  },
+  "j_req": {
+    "it": "Scrivi almeno qualche parola prima di inviare.",
+    "en": "Please write a few words before sending.",
+    "de": "Bitte schreibe ein paar Worte, bevor du sendest.",
+    "ru": "Напиши хотя бы несколько слов перед отправкой."
+  },
+  "j_doc_t": {
+    "it": "Il documento ufficiale",
+    "en": "The official document",
+    "de": "Das offizielle Dokument",
+    "ru": "Официальный документ"
+  },
+  "j_doc_d": {
+    "it": "Il testo completo del Noskynismo in formato PDF: manifesto, carta dei diritti, economia e cultura.",
+    "en": "The full text of Noskynismo in PDF format: manifesto, charter of rights, economy and culture.",
+    "de": "Der vollständige Text des Noskynismo als PDF: Manifest, Rechtecharta, Wirtschaft und Kultur.",
+    "ru": "Полный текст носкинизма в формате PDF: манифест, хартия прав, экономика и культура."
+  },
+  "j_doc_btn": {
+    "it": "Scarica il PDF",
+    "en": "Download the PDF",
+    "de": "PDF herunterladen",
+    "ru": "Скачать PDF"
+  },
+  "j_doc_meta": {
+    "it": "PDF · Documento ufficiale",
+    "en": "PDF · Official document",
+    "de": "PDF · Offizielles Dokument",
+    "ru": "PDF · Официальный документ"
+  }
+}

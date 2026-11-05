@@ -1,0 +1,200 @@
+{
+  "h_kicker": {
+    "it": "Manifesto del Movimento",
+    "en": "Manifesto of the Movement",
+    "de": "Manifest der Bewegung",
+    "ru": "Манифест движения"
+  },
+  "h_title": {
+    "it": "Il <span class=\"accent\">Noskynismo</span>",
+    "en": "The <span class=\"accent\">Noskynismo</span>",
+    "de": "Der <span class=\"accent\">Noskynismo</span>",
+    "ru": "<span class=\"accent\">Носкинизм</span>"
+  },
+  "h_lede": {
+    "it": "Un'idea di NoskynHK &amp; Sig.Lev: un'utopia concreta, nata come progetto scolastico e ormai completa, fondata su libertà, uguaglianza e sui diritti della comunità LGBTQIA+ e dei femboy — simbolo del movimento.",
+    "en": "An idea by NoskynHK &amp; Sig.Lev: a concrete utopia, born as a school project and now complete, built on freedom, equality and the rights of the LGBTQIA+ community and of femboys — the symbol of the movement.",
+    "de": "Eine Idee von NoskynHK &amp; Sig.Lev: eine konkrete Utopie, als Schulprojekt entstanden und nun vollendet, gegründet auf Freiheit, Gleichheit und die Rechte der LGBTQIA+-Gemeinschaft und der Femboys — das Symbol der Bewegung.",
+    "ru": "Идея NoskynHK &amp; Sig.Lev: конкретная утопия, родившаяся как школьный проект и теперь завершённая, основанная на свободе, равенстве и правах сообщества ЛГБТКИА+ и фембоев — символа движения."
+  },
+  "h_cta1": {
+    "it": "Leggi il manifesto",
+    "en": "Read the manifesto",
+    "de": "Manifest lesen",
+    "ru": "Читать манифест"
+  },
+  "h_cta2": {
+    "it": "Scarica il documento ufficiale",
+    "en": "Download the official document",
+    "de": "Offizielles Dokument herunterladen",
+    "ru": "Скачать официальный документ"
+  },
+  "h_quote": {
+    "it": "“La vera libertà non è fare ciò che si vuole, ma permettere a ciascuno di essere ciò che è senza paura del giudizio.”",
+    "en": "“True freedom is not doing whatever you want, but allowing everyone to be who they are without fear of judgment.”",
+    "de": "„Wahre Freiheit heißt nicht, zu tun, was man will, sondern jedem zu erlauben, der zu sein, der er ist – ohne Angst vor Urteil.“",
+    "ru": "«Настоящая свобода — это не делать что хочешь, а позволить каждому быть тем, кто он есть, не боясь осуждения.»"
+  },
+  "h_quote_src": {
+    "it": "Principio fondativo del Noskynismo",
+    "en": "Founding principle of Noskynismo",
+    "de": "Gründungsprinzip des Noskynismo",
+    "ru": "Основополагающий принцип носкинизма"
+  },
+  "h_p1_t": {
+    "it": "Libertà",
+    "en": "Freedom",
+    "de": "Freiheit",
+    "ru": "Свобода"
+  },
+  "h_p1_d": {
+    "it": "Libero arbitrio e libertà d'essere: il valore che sovrasta tutti gli altri.",
+    "en": "Free will and the freedom to be: the value that stands above all others.",
+    "de": "Freier Wille und die Freiheit, zu sein: der Wert, der über allen anderen steht.",
+    "ru": "Свобода воли и свобода быть собой: ценность, которая стоит выше всех остальных."
+  },
+  "h_p2_t": {
+    "it": "Uguaglianza",
+    "en": "Equality",
+    "de": "Gleichheit",
+    "ru": "Равенство"
+  },
+  "h_p2_d": {
+    "it": "Nessuna discriminazione: parità assoluta di diritti e di dignità per tutti.",
+    "en": "No discrimination: absolute equality of rights and dignity for everyone.",
+    "de": "Keine Diskriminierung: absolute Gleichheit der Rechte und der Würde für alle.",
+    "ru": "Никакой дискриминации: абсолютное равенство прав и достоинства для всех."
+  },
+  "h_p3_t": {
+    "it": "Amore",
+    "en": "Love",
+    "de": "Liebe",
+    "ru": "Любовь"
+  },
+  "h_p3_d": {
+    "it": "Ogni forma di relazione è accolta, senza ostacoli imposti da preconcetti.",
+    "en": "Every kind of relationship is welcome, free of obstacles imposed by prejudice.",
+    "de": "Jede Form von Beziehung ist willkommen – ohne Hindernisse durch Vorurteile.",
+    "ru": "Любые отношения приняты, без препятствий, навязанных предрассудками."
+  },
+  "h_s1": {
+    "it": "articoli nella Carta dei Diritti",
+    "en": "articles in the Charter of Rights",
+    "de": "Artikel in der Rechtecharta",
+    "ru": "статей в Хартии прав"
+  },
+  "h_s2": {
+    "it": "tagli di Levvino",
+    "en": "Levvino banknotes",
+    "de": "Levvino-Banknoten",
+    "ru": "номиналов леввино"
+  },
+  "h_s3": {
+    "it": "inno ufficiale",
+    "en": "official anthem",
+    "de": "offizielle Hymne",
+    "ru": "официальный гимн"
+  },
+  "h_s4": {
+    "it": "lingue",
+    "en": "languages",
+    "de": "Sprachen",
+    "ru": "языка"
+  },
+  "h_explore_t": {
+    "it": "Esplora il movimento",
+    "en": "Explore the movement",
+    "de": "Entdecke die Bewegung",
+    "ru": "Узнай движение"
+  },
+  "h_explore_d": {
+    "it": "Il sito è diviso per aree: la storia e l'ideologia, i diritti fondamentali, l'economia, la cultura del popolo noskyniano — e poi l'inno, la tessera e il tuo contributo.",
+    "en": "The site is split into areas: history and ideology, fundamental rights, the economy and the culture of the Noskynian people — plus the anthem, the card and your contribution.",
+    "de": "Die Seite ist in Bereiche gegliedert: Geschichte und Ideologie, Grundrechte, Wirtschaft und Kultur des noskynischen Volkes – dazu Hymne, Karte und dein Beitrag.",
+    "ru": "Сайт разделён на разделы: история и идеология, основные права, экономика, культура носкинского народа — а ещё гимн, билет и твой вклад."
+  },
+  "h_c1_d": {
+    "it": "La storia, l'organizzazione e l'amministrazione del popolo.",
+    "en": "History, organisation and administration of the people.",
+    "de": "Geschichte, Organisation und Verwaltung des Volkes.",
+    "ru": "История, организация и управление народом."
+  },
+  "h_c2_d": {
+    "it": "La Carta dei Diritti Noskyniani: libertà, uguaglianza, tutele.",
+    "en": "The Noskynian Charter of Rights: freedom, equality, protections.",
+    "de": "Die noskynische Rechtecharta: Freiheit, Gleichheit, Schutz.",
+    "ru": "Носкинская хартия прав: свобода, равенство, защита."
+  },
+  "h_c3_d": {
+    "it": "Il Minimo Vitale Levvino, la meritocrazia, la B.C.U.",
+    "en": "The Levvino Minimum Standard, meritocracy, the C.B.U.",
+    "de": "Das Levvino-Existenzminimum, Meritokratie, die Z.B.U.",
+    "ru": "Леввинский прожиточный минимум, меритократия, Ц.Б.С."
+  },
+  "h_c4_d": {
+    "it": "Istruzione, arte, moda e il significato dell'emblema.",
+    "en": "Education, art, fashion and the meaning of the emblem.",
+    "de": "Bildung, Kunst, Mode und die Bedeutung des Emblems.",
+    "ru": "Образование, искусство, мода и значение эмблемы."
+  },
+  "h_c5_d": {
+    "it": "Ascolta l'inno ufficiale del movimento.",
+    "en": "Listen to the movement's official anthem.",
+    "de": "Höre die offizielle Hymne der Bewegung.",
+    "ru": "Послушай официальный гимн движения."
+  },
+  "h_c6_d": {
+    "it": "Crea e scarica la tua tessera di adesione.",
+    "en": "Create and download your membership card.",
+    "de": "Erstelle und lade deine Mitgliedskarte herunter.",
+    "ru": "Создай и скачай свой членский билет."
+  },
+  "h_c7_d": {
+    "it": "Proponi idee, modifiche e aggiunte.",
+    "en": "Suggest ideas, changes and additions.",
+    "de": "Schlage Ideen, Änderungen und Ergänzungen vor.",
+    "ru": "Предлагай идеи, изменения и дополнения."
+  },
+  "h_poster_t": {
+    "it": "Il poster del Noskynismo",
+    "en": "The Noskynismo poster",
+    "de": "Das Noskynismo-Plakat",
+    "ru": "Плакат носкинизма"
+  },
+  "h_poster_d": {
+    "it": "Bandiere arcobaleno, il simbolo della pace e una nuova generazione che guarda avanti con il segno del movimento in mano.",
+    "en": "Rainbow flags, the peace symbol and a new generation looking ahead with the movement's mark in hand.",
+    "de": "Regenbogenfahnen, das Friedenszeichen und eine neue Generation, die mit dem Zeichen der Bewegung in der Hand nach vorn blickt.",
+    "ru": "Радужные флаги, знак мира и новое поколение, которое смотрит вперёд со знаком движения в руках."
+  },
+  "h_poster_btn": {
+    "it": "Scarica il poster",
+    "en": "Download the poster",
+    "de": "Plakat herunterladen",
+    "ru": "Скачать плакат"
+  },
+  "h_poster_alt": {
+    "it": "Poster del Noskynismo con bandiere arcobaleno e il logo del movimento",
+    "en": "Noskynismo poster with rainbow flags and the movement's logo",
+    "de": "Noskynismo-Plakat mit Regenbogenfahnen und dem Logo der Bewegung",
+    "ru": "Плакат носкинизма с радужными флагами и логотипом движения"
+  },
+  "h_doc_t": {
+    "it": "Il documento ufficiale",
+    "en": "The official document",
+    "de": "Das offizielle Dokument",
+    "ru": "Официальный документ"
+  },
+  "h_doc_d": {
+    "it": "Tutto il Noskynismo in un unico PDF: storia, diritti, economia e cultura. Scaricalo, stampalo, condividilo.",
+    "en": "All of Noskynismo in a single PDF: history, rights, economy and culture. Download it, print it, share it.",
+    "de": "Der ganze Noskynismo in einem PDF: Geschichte, Rechte, Wirtschaft und Kultur. Herunterladen, ausdrucken, teilen.",
+    "ru": "Весь носкинизм в одном PDF: история, права, экономика и культура. Скачай, распечатай, поделись."
+  },
+  "h_doc_btn": {
+    "it": "Scarica il PDF",
+    "en": "Download the PDF",
+    "de": "PDF herunterladen",
+    "ru": "Скачать PDF"
+  }
+}

@@ -1,0 +1,338 @@
+{
+  "e_title": {
+    "it": "La Nuova Economia",
+    "en": "The New Economy",
+    "de": "Die neue Wirtschaft",
+    "ru": "Новая экономика"
+  },
+  "e_sub": {
+    "it": "Un pavimento garantito per tutti, un mercato aperto per chi produce di più, e una banca centrale che tiene tutto in equilibrio.",
+    "en": "A guaranteed floor for everyone, an open market for those who produce more, and a central bank that keeps everything in balance.",
+    "de": "Ein garantierter Boden für alle, ein offener Markt für jene, die mehr leisten, und eine Zentralbank, die alles im Gleichgewicht hält.",
+    "ru": "Гарантированная основа для всех, открытый рынок для тех, кто производит больше, и центральный банк, который держит всё в равновесии."
+  },
+  "e_1_eye": {
+    "it": "Base garantita",
+    "en": "Guaranteed base",
+    "de": "Garantierte Basis",
+    "ru": "Гарантированная основа"
+  },
+  "e_1_t": {
+    "it": "Il Minimo Vitale Levvino (M.V.L.)",
+    "en": "The Levvino Minimum Standard (L.M.S.)",
+    "de": "Das Levvino-Existenzminimum (L.E.M.)",
+    "ru": "Леввинский прожиточный минимум (Л.П.М.)"
+  },
+  "e_1_d": {
+    "it": "Un diritto strutturale, non un premio, finanziato dalla fiscalità generale:",
+    "en": "A structural right, not a reward, funded by general taxation:",
+    "de": "Ein struktureller Anspruch, keine Belohnung, finanziert aus allgemeinen Steuern:",
+    "ru": "Структурное право, а не награда, финансируемое из общих налогов:"
+  },
+  "e_1_l1": {
+    "it": "Istruzione pubblica gratuita fino all'università",
+    "en": "Free public education up to university",
+    "de": "Kostenlose öffentliche Bildung bis zur Universität",
+    "ru": "Бесплатное государственное образование до университета"
+  },
+  "e_1_l2": {
+    "it": "Sanità pubblica universale",
+    "en": "Universal public healthcare",
+    "de": "Allgemeine öffentliche Gesundheitsversorgung",
+    "ru": "Всеобщее государственное здравоохранение"
+  },
+  "e_1_l3": {
+    "it": "Reddito di base mensile per ogni cittadino",
+    "en": "Monthly basic income for every citizen",
+    "de": "Monatliches Grundeinkommen für jeden Bürger",
+    "ru": "Ежемесячный базовый доход каждому гражданину"
+  },
+  "e_1_l4": {
+    "it": "Alloggio e trasporti sovvenzionati nelle aree a bassa densità economica",
+    "en": "Subsidised housing and transport in low-density economic areas",
+    "de": "Geförderte Wohnungen und Verkehrsmittel in wirtschaftsschwachen Gebieten",
+    "ru": "Субсидированное жильё и транспорт в экономически слабых районах"
+  },
+  "e_2_eye": {
+    "it": "Fascia meritocratica",
+    "en": "Meritocratic tier",
+    "de": "Meritokratische Stufe",
+    "ru": "Меритократический уровень"
+  },
+  "e_2_t": {
+    "it": "Un mercato aperto, sopra la base",
+    "en": "An open market above the base",
+    "de": "Ein offener Markt über der Basis",
+    "ru": "Открытый рынок над основой"
+  },
+  "e_2_d": {
+    "it": "Guadagni aggiuntivi e risorse scarse distribuiti secondo criteri misurabili:",
+    "en": "Additional earnings and scarce resources distributed by measurable criteria:",
+    "de": "Zusätzliche Einkommen und knappe Ressourcen werden nach messbaren Kriterien verteilt:",
+    "ru": "Дополнительные доходы и дефицитные ресурсы распределяются по измеримым критериям:"
+  },
+  "e_2_l1": {
+    "it": "Produttività verificata sul lavoro",
+    "en": "Verified productivity at work",
+    "de": "Nachgewiesene Produktivität bei der Arbeit",
+    "ru": "Подтверждённая производительность на работе"
+  },
+  "e_2_l2": {
+    "it": "Innovazione e contributo a progetti collettivi",
+    "en": "Innovation and contribution to collective projects",
+    "de": "Innovation und Beitrag zu Gemeinschaftsprojekten",
+    "ru": "Инновации и вклад в коллективные проекты"
+  },
+  "e_2_l3": {
+    "it": "Risultati in percorsi di istruzione avanzata",
+    "en": "Results in advanced education paths",
+    "de": "Leistungen in weiterführenden Bildungswegen",
+    "ru": "Результаты в углублённом обучении"
+  },
+  "e_2_l4": {
+    "it": "Servizio alla comunità",
+    "en": "Service to the community",
+    "de": "Dienst an der Gemeinschaft",
+    "ru": "Служение обществу"
+  },
+  "e_3_eye": {
+    "it": "Banca Centrale dell'Unione",
+    "en": "Central Bank of the Union",
+    "de": "Zentralbank der Union",
+    "ru": "Центральный банк Союза"
+  },
+  "e_3_t": {
+    "it": "Il ruolo della B.C.U.",
+    "en": "The role of the C.B.U.",
+    "de": "Die Rolle der Z.B.U.",
+    "ru": "Роль Ц.Б.С."
+  },
+  "e_3_d": {
+    "it": "Emette il Levvino e risponde di tre compiti:",
+    "en": "Issues the Levvino and is responsible for three tasks:",
+    "de": "Gibt den Levvino aus und hat drei Aufgaben:",
+    "ru": "Выпускает леввино и отвечает за три задачи:"
+  },
+  "e_3_l1": {
+    "it": "Garantire stabilità dei prezzi e valore della moneta",
+    "en": "Guarantee price stability and the value of the currency",
+    "de": "Preisstabilität und Geldwert sichern",
+    "ru": "Обеспечивать стабильность цен и ценность валюты"
+  },
+  "e_3_l2": {
+    "it": "Finanziare il M.V.L. tramite la leva fiscale",
+    "en": "Fund the L.M.S. through taxation",
+    "de": "Das L.E.M. über Steuern finanzieren",
+    "ru": "Финансировать Л.П.М. через налоги"
+  },
+  "e_3_l3": {
+    "it": "Evitare che la meritocrazia generi rendite permanenti",
+    "en": "Prevent meritocracy from creating permanent rents",
+    "de": "Verhindern, dass Meritokratie dauerhafte Renten erzeugt",
+    "ru": "Не допускать, чтобы меритократия порождала постоянную ренту"
+  },
+  "e_anti_t": {
+    "it": "Il Principio Anti-Rendita",
+    "en": "The Anti-Rent Principle",
+    "de": "Das Anti-Renten-Prinzip",
+    "ru": "Принцип против ренты"
+  },
+  "e_anti_d": {
+    "it": "La ricchezza accumulata tramite il merito è tassata più severamente se non viene reinvestita in attività produttive o collettive, per evitare che il sistema meritocratico si trasformi in una nuova aristocrazia economica.",
+    "en": "Wealth accumulated through merit is taxed more heavily if it is not reinvested in productive or collective activities, to prevent the meritocratic system from turning into a new economic aristocracy.",
+    "de": "Durch Leistung angehäufter Reichtum wird stärker besteuert, wenn er nicht in produktive oder gemeinschaftliche Tätigkeiten reinvestiert wird – damit das meritokratische System nicht zu einer neuen Wirtschaftsaristokratie wird.",
+    "ru": "Богатство, накопленное по заслугам, облагается более высоким налогом, если оно не реинвестируется в производительную или общественную деятельность, чтобы меритократическая система не превратилась в новую экономическую аристократию."
+  },
+  "e_lev_t": {
+    "it": "Il Levvino — La Valuta del Nuovo Secolo",
+    "en": "The Levvino — Currency of the New Century",
+    "de": "Der Levvino — Die Währung des neuen Jahrhunderts",
+    "ru": "Леввино — валюта нового века"
+  },
+  "e_lev_d": {
+    "it": "Ogni taglio del Levvino, emesso dalla Banca Centrale dell'Unione, raffigura un monumento simbolo di una civiltà diversa — a rappresentare l'apertura e i legami tra i popoli dell'Unione dei Levvini. Al centro di ogni banconota, l'emblema del Noskynismo. <span class=\"hint\">Tocca una banconota per ingrandirla.</span>",
+    "en": "Each Levvino denomination, issued by the Central Bank of the Union, depicts a monument symbolising a different civilisation — representing the openness and bonds between the peoples of the Union of Levvini. At the centre of every banknote, the emblem of Noskynismo. <span class=\"hint\">Tap a banknote to enlarge it.</span>",
+    "de": "Jede Levvino-Stückelung, ausgegeben von der Zentralbank der Union, zeigt ein Monument einer anderen Zivilisation – als Zeichen der Offenheit und der Bande zwischen den Völkern der Levvini-Union. In der Mitte jeder Banknote steht das Emblem des Noskynismo. <span class=\"hint\">Tippe auf eine Banknote, um sie zu vergrößern.</span>",
+    "ru": "Каждый номинал леввино, выпущенный Центральным банком Союза, изображает памятник, символ иной цивилизации, — как знак открытости и связей между народами Союза леввинов. В центре каждой банкноты — эмблема носкинизма. <span class=\"hint\">Нажми на банкноту, чтобы увеличить.</span>"
+  },
+  "e_n1": {
+    "it": "1 Levvino",
+    "en": "1 Levvino",
+    "de": "1 Levvino",
+    "ru": "1 леввино"
+  },
+  "e_n1_p": {
+    "it": "Arco e ponte romano",
+    "en": "Roman arch and bridge",
+    "de": "Römischer Bogen und Brücke",
+    "ru": "Римская арка и мост"
+  },
+  "e_n2": {
+    "it": "2 Levvini",
+    "en": "2 Levvini",
+    "de": "2 Levvini",
+    "ru": "2 леввино"
+  },
+  "e_n2_p": {
+    "it": "Tempio egizio, sul Nilo",
+    "en": "Egyptian temple on the Nile",
+    "de": "Ägyptischer Tempel am Nil",
+    "ru": "Египетский храм на Ниле"
+  },
+  "e_n5": {
+    "it": "5 Levvini",
+    "en": "5 Levvini",
+    "de": "5 Levvini",
+    "ru": "5 леввино"
+  },
+  "e_n5_p": {
+    "it": "Colosseo, Roma",
+    "en": "Colosseum, Rome",
+    "de": "Kolosseum, Rom",
+    "ru": "Колизей, Рим"
+  },
+  "e_n10": {
+    "it": "10 Levvini",
+    "en": "10 Levvini",
+    "de": "10 Levvini",
+    "ru": "10 леввино"
+  },
+  "e_n10_p": {
+    "it": "Partenone, Atene",
+    "en": "Parthenon, Athens",
+    "de": "Parthenon, Athen",
+    "ru": "Парфенон, Афины"
+  },
+  "e_n20": {
+    "it": "20 Levvini",
+    "en": "20 Levvini",
+    "de": "20 Levvini",
+    "ru": "20 леввино"
+  },
+  "e_n20_p": {
+    "it": "Foro Romano, Roma",
+    "en": "Roman Forum, Rome",
+    "de": "Forum Romanum, Rom",
+    "ru": "Римский форум, Рим"
+  },
+  "e_n50": {
+    "it": "50 Levvini",
+    "en": "50 Levvini",
+    "de": "50 Levvini",
+    "ru": "50 леввино"
+  },
+  "e_n50_p": {
+    "it": "Moschea sul Bosforo, Istanbul",
+    "en": "Mosque on the Bosphorus, Istanbul",
+    "de": "Moschee am Bosporus, Istanbul",
+    "ru": "Мечеть на Босфоре, Стамбул"
+  },
+  "e_n100": {
+    "it": "100 Levvini",
+    "en": "100 Levvini",
+    "de": "100 Levvini",
+    "ru": "100 леввино"
+  },
+  "e_n100_p": {
+    "it": "Palazzo sul Canal Grande, Venezia",
+    "en": "Palace on the Grand Canal, Venice",
+    "de": "Palast am Canal Grande, Venedig",
+    "ru": "Дворец на Гранд-канале, Венеция"
+  },
+  "e_n200": {
+    "it": "200 Levvini",
+    "en": "200 Levvini",
+    "de": "200 Levvini",
+    "ru": "200 леввино"
+  },
+  "e_n200_p": {
+    "it": "Tempio classico, Atene",
+    "en": "Classical temple, Athens",
+    "de": "Klassischer Tempel, Athen",
+    "ru": "Классический храм, Афины"
+  },
+  "e_n500": {
+    "it": "500 Levvini",
+    "en": "500 Levvini",
+    "de": "500 Levvini",
+    "ru": "500 леввино"
+  },
+  "e_n500_p": {
+    "it": "Cremlino, Mosca — con la scritta “Svoboda” (libertà) al posto di “Libertà”",
+    "en": "Kremlin, Moscow — with the word “Svoboda” (freedom) in place of “Libertà”",
+    "de": "Kreml, Moskau – mit der Aufschrift „Svoboda“ (Freiheit) statt „Libertà“",
+    "ru": "Кремль, Москва — с надписью «Свобода» вместо «Libertà»"
+  },
+  "e_cv_t": {
+    "it": "Convertitore Levvino",
+    "en": "Levvino converter",
+    "de": "Levvino-Rechner",
+    "ru": "Конвертер леввино"
+  },
+  "e_cv_d": {
+    "it": "Quanto vale il tuo denaro nel Noskynismo? Il tasso della B.C.U. è semplice: <strong>2 franchi = 1 Levvino</strong>. Gli altri cambi sono indicativi e inventati: è un gioco.",
+    "en": "What is your money worth in Noskynismo? The C.B.U. rate is simple: <strong>2 francs = 1 Levvino</strong>. The other rates are indicative and invented: it's a game.",
+    "de": "Was ist dein Geld im Noskynismo wert? Der Z.B.U.-Kurs ist einfach: <strong>2 Franken = 1 Levvino</strong>. Die anderen Kurse sind ungefähre, erfundene Werte: Es ist ein Spiel.",
+    "ru": "Сколько стоят твои деньги в носкинизме? Курс Ц.Б.С. прост: <strong>2 франка = 1 леввино</strong>. Остальные курсы приблизительные и выдуманные: это игра."
+  },
+  "e_cv_cur": {
+    "it": "Valuta",
+    "en": "Currency",
+    "de": "Währung",
+    "ru": "Валюта"
+  },
+  "e_cv_eur": {
+    "it": "Euro (€)",
+    "en": "Euro (€)",
+    "de": "Euro (€)",
+    "ru": "Евро (€)"
+  },
+  "e_cv_lev": {
+    "it": "Levvini (Lv)",
+    "en": "Levvini (Lv)",
+    "de": "Levvini (Lv)",
+    "ru": "Леввино (Lv)"
+  },
+  "e_cv_amount": {
+    "it": "Importo",
+    "en": "Amount",
+    "de": "Betrag",
+    "ru": "Сумма"
+  },
+  "e_cv_swap": {
+    "it": "Inverti direzione",
+    "en": "Swap direction",
+    "de": "Richtung umkehren",
+    "ru": "Поменять направление"
+  },
+  "e_cv_res": {
+    "it": "Equivale a",
+    "en": "Equals",
+    "de": "Entspricht",
+    "ru": "Это равно"
+  },
+  "e_cv_notes": {
+    "it": "In banconote:",
+    "en": "In banknotes:",
+    "de": "In Banknoten:",
+    "ru": "Банкнотами:"
+  },
+  "e_cv_change": {
+    "it": "più spiccioli",
+    "en": "plus small change",
+    "de": "plus Kleingeld",
+    "ru": "плюс мелочь"
+  },
+  "e_cv_none": {
+    "it": "Inserisci un importo per vedere il cambio.",
+    "en": "Enter an amount to see the exchange.",
+    "de": "Gib einen Betrag ein, um den Umtausch zu sehen.",
+    "ru": "Введи сумму, чтобы увидеть обмен."
+  },
+  "e_cv_note": {
+    "it": "Il Levvino non esiste (ancora): il cambio non vale nei negozi!",
+    "en": "The Levvino doesn't exist (yet): the rate isn't valid in shops!",
+    "de": "Den Levvino gibt es (noch) nicht: Der Kurs gilt nicht in Geschäften!",
+    "ru": "Леввино (пока) не существует: курс в магазинах не действует!"
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "c_title": {
+    "it": "Cultura del Popolo",
+    "en": "Culture of the People",
+    "de": "Kultur des Volkes",
+    "ru": "Культура народа"
+  },
+  "c_sub": {
+    "it": "Istruzione, arte e città aperte: come il Noskynismo immagina la vita quotidiana — e il significato del proprio emblema.",
+    "en": "Education, art and open cities: how Noskynismo imagines daily life — and the meaning of its emblem.",
+    "de": "Bildung, Kunst und offene Städte: wie der Noskynismo sich den Alltag vorstellt – und was sein Emblem bedeutet.",
+    "ru": "Образование, искусство и открытые города: как носкинизм представляет себе повседневную жизнь — и значение своей эмблемы."
+  },
+  "c_1_t": {
+    "it": "Istruzione",
+    "en": "Education",
+    "de": "Bildung",
+    "ru": "Образование"
+  },
+  "c_1_d": {
+    "it": "Dalla seconda media in poi, un'ora settimanale è dedicata all'educazione sessoaffettiva e di vita: consenso, parità di genere, rispetto per la comunità LGBTQIA+, ma anche tasse, colloqui di lavoro e diritti sul posto di lavoro. I compiti a casa lasciano spazio a progetti di gruppo, per allenare problem solving, lavoro di squadra e leadership.",
+    "en": "From the second year of middle school onwards, one hour a week is dedicated to sex, relationship and life education: consent, gender equality, respect for the LGBTQIA+ community, but also taxes, job interviews and workplace rights. Homework gives way to group projects that train problem solving, teamwork and leadership.",
+    "de": "Ab der siebten Klasse ist eine Wochenstunde der Sexual-, Beziehungs- und Lebenskunde gewidmet: Einvernehmen, Gleichstellung der Geschlechter, Respekt vor der LGBTQIA+-Gemeinschaft, aber auch Steuern, Vorstellungsgespräche und Arbeitnehmerrechte. Hausaufgaben weichen Gruppenprojekten, die Problemlösung, Teamarbeit und Führungsstärke trainieren.",
+    "ru": "Начиная с седьмого класса один час в неделю посвящён половому, романтическому и жизненному воспитанию: согласие, гендерное равенство, уважение к сообществу ЛГБТКИА+, а также налоги, собеседования и права на рабочем месте. Домашние задания уступают место групповым проектам, которые развивают решение проблем, командную работу и лидерство."
+  },
+  "c_2_t": {
+    "it": "Arte e Innovazioni",
+    "en": "Art and Innovation",
+    "de": "Kunst und Innovation",
+    "ru": "Искусство и инновации"
+  },
+  "c_2_d": {
+    "it": "Le città non hanno più confini né mura: sono aperte e collegate tra loro. L'arte supera i vecchi canoni estetici di genere. L'energia viene dal nucleare di nuova generazione — pulito, sicuro, inesauribile — visto non come minaccia ma come trionfo dell'ingegno umano.",
+    "en": "Cities no longer have borders or walls: they are open and connected to one another. Art goes beyond the old gendered aesthetic canons. Energy comes from next-generation nuclear power — clean, safe, inexhaustible — seen not as a threat but as a triumph of human ingenuity.",
+    "de": "Städte haben keine Grenzen und Mauern mehr: Sie sind offen und miteinander verbunden. Die Kunst überwindet die alten geschlechtsbezogenen Schönheitskanons. Die Energie stammt aus Kernkraft der neuen Generation – sauber, sicher, unerschöpflich – und gilt nicht als Bedrohung, sondern als Triumph des menschlichen Erfindungsgeistes.",
+    "ru": "У городов больше нет границ и стен: они открыты и связаны друг с другом. Искусство выходит за рамки старых гендерных эстетических канонов. Энергия поступает от атомной энергетики нового поколения — чистой, безопасной, неисчерпаемой — которую видят не как угрозу, а как триумф человеческой изобретательности."
+  },
+  "c_3_t": {
+    "it": "Moda",
+    "en": "Fashion",
+    "de": "Mode",
+    "ru": "Мода"
+  },
+  "c_3_d": {
+    "it": "Ogni individuo può indossare per strada ciò che meglio esprime la propria identità, al sicuro da ogni giudizio. Il valore di una persona non dipende da genere o origini, ma da ciò che sa offrire alla società.",
+    "en": "Everyone can wear on the street whatever best expresses their identity, safe from any judgment. A person's worth does not depend on gender or origins but on what they can offer society.",
+    "de": "Jeder darf auf der Straße tragen, was seine Identität am besten ausdrückt, geschützt vor jedem Urteil. Der Wert eines Menschen hängt nicht von Geschlecht oder Herkunft ab, sondern davon, was er der Gesellschaft zu geben hat.",
+    "ru": "Каждый может носить на улице то, что лучше всего выражает его личность, не опасаясь осуждения. Ценность человека не зависит от пола или происхождения, а от того, что он может дать обществу."
+  },
+  "c_sym_t": {
+    "it": "Il Simbolo del Movimento",
+    "en": "The Symbol of the Movement",
+    "de": "Das Symbol der Bewegung",
+    "ru": "Символ движения"
+  },
+  "c_sym_d": {
+    "it": "L'emblema ufficiale del Noskynismo, con i suoi elementi e il loro significato.",
+    "en": "The official emblem of Noskynismo, its elements and what they mean.",
+    "de": "Das offizielle Emblem des Noskynismo, seine Elemente und ihre Bedeutung.",
+    "ru": "Официальная эмблема носкинизма, её элементы и их значение."
+  },
+  "c_s1_t": {
+    "it": "Il fiocco centrale",
+    "en": "The central bow",
+    "de": "Die zentrale Schleife",
+    "ru": "Центральный бант"
+  },
+  "c_s1_d": {
+    "it": "Cuore dell'emblema: rappresenta i femboy e, più in generale, la comunità LGBTQIA+, posti come simbolo di libertà d'espressione e di identità del movimento.",
+    "en": "The heart of the emblem: it represents femboys and, more broadly, the LGBTQIA+ community, set as a symbol of freedom of expression and of the movement's identity.",
+    "de": "Das Herz des Emblems: Es steht für die Femboys und allgemein für die LGBTQIA+-Gemeinschaft als Symbol für Ausdrucksfreiheit und die Identität der Bewegung.",
+    "ru": "Сердце эмблемы: он представляет фембоев и, шире, сообщество ЛГБТКИА+ как символ свободы самовыражения и идентичности движения."
+  },
+  "c_s2_t": {
+    "it": "Stelle e cuori",
+    "en": "Stars and hearts",
+    "de": "Sterne und Herzen",
+    "ru": "Звёзды и сердца"
+  },
+  "c_s2_d": {
+    "it": "Circondano il fiocco a richiamare l'amore incondizionato e la leggerezza che il Noskynismo promette come valori quotidiani, non solo ideali astratti.",
+    "en": "They surround the bow, recalling the unconditional love and lightness that Noskynismo promises as everyday values, not just abstract ideals.",
+    "de": "Sie umgeben die Schleife und erinnern an die bedingungslose Liebe und Leichtigkeit, die der Noskynismo als Werte des Alltags verspricht – nicht nur als abstrakte Ideale.",
+    "ru": "Они окружают бант и напоминают о безусловной любви и лёгкости, которые носкинизм обещает как повседневные ценности, а не только абстрактные идеалы."
+  },
+  "c_s3_t": {
+    "it": "I rami d'alloro e la corda",
+    "en": "The laurel branches and the rope",
+    "de": "Die Lorbeerzweige und das Seil",
+    "ru": "Лавровые ветви и канат"
+  },
+  "c_s3_d": {
+    "it": "Il classico richiamo araldico alla dignità e all'unione del popolo, qui reinterpretato per un movimento che si vuole comunque radicato in una tradizione, sia pure nuova.",
+    "en": "The classic heraldic nod to dignity and the unity of the people, reinterpreted here for a movement that still wants to be rooted in a tradition, however new.",
+    "de": "Der klassische heraldische Verweis auf Würde und Einheit des Volkes, hier neu gedeutet für eine Bewegung, die dennoch in einer – wenn auch neuen – Tradition wurzeln will.",
+    "ru": "Классический геральдический знак достоинства и единства народа, здесь переосмысленный для движения, которое всё же хочет опираться на традицию, пусть и новую."
+  },
+  "c_s4_t": {
+    "it": "Il nastro “Libertà”",
+    "en": "The “Libertà” ribbon",
+    "de": "Das Band „Libertà“",
+    "ru": "Лента «Libertà»"
+  },
+  "c_s4_d": {
+    "it": "Il valore che sovrasta tutti gli altri nel Noskynismo: nessun diritto, economico o sociale, ha senso senza la libertà di essere ciò che si è.",
+    "en": "The value that stands above all others in Noskynismo: no right, economic or social, makes sense without the freedom to be who you are.",
+    "de": "Der Wert, der im Noskynismo über allen anderen steht: Kein Recht, weder wirtschaftlich noch sozial, hat Sinn ohne die Freiheit, der zu sein, der man ist.",
+    "ru": "Ценность, которая стоит выше всех в носкинизме: никакое право, экономическое или социальное, не имеет смысла без свободы быть собой."
+  },
+  "c_s5_t": {
+    "it": "“Fond. NoskynHK &amp; Sig. Lev.”",
+    "en": "“Fond. NoskynHK &amp; Sig. Lev.”",
+    "de": "„Fond. NoskynHK &amp; Sig. Lev.“",
+    "ru": "«Fond. NoskynHK &amp; Sig. Lev.»"
+  },
+  "c_s5_d": {
+    "it": "Il riferimento ai due fondatori del movimento, a firma dell'origine e della paternità dell'idea.",
+    "en": "The reference to the two founders of the movement, signing the origin and authorship of the idea.",
+    "de": "Der Verweis auf die beiden Gründer der Bewegung, als Signatur von Ursprung und Urheberschaft der Idee.",
+    "ru": "Указание на двух основателей движения как подпись происхождения и авторства идеи."
+  },
+  "c_moda_t": {
+    "it": "Le gonne diventano il simbolo distintivo del Noskynismo",
+    "en": "Skirts become the distinctive symbol of Noskynismo",
+    "de": "Röcke werden zum Erkennungszeichen des Noskynismo",
+    "ru": "Юбки становятся отличительным символом носкинизма"
+  },
+  "c_moda_d": {
+    "it": "In questo mondo utopico, ogni individuo cammina per le strade indossando ciò che meglio esprime la propria identità — senza timore di giudizio o discriminazione. Le gonne, capo tradizionale del movimento, ne rappresentano la libertà.",
+    "en": "In this utopian world, everyone walks the streets wearing whatever best expresses their identity — without fear of judgment or discrimination. Skirts, the movement's traditional garment, stand for its freedom.",
+    "de": "In dieser utopischen Welt geht jeder auf der Straße in dem, was seine Identität am besten ausdrückt – ohne Angst vor Urteil oder Diskriminierung. Röcke, das traditionelle Kleidungsstück der Bewegung, stehen für ihre Freiheit.",
+    "ru": "В этом утопическом мире каждый ходит по улицам в том, что лучше всего выражает его личность, — не боясь осуждения или дискриминации. Юбки, традиционная одежда движения, олицетворяют его свободу."
+  }
+}

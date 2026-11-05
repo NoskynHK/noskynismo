@@ -1,0 +1,128 @@
+{
+  "r_title": {
+    "it": "I Diritti",
+    "en": "The Rights",
+    "de": "Die Rechte",
+    "ru": "Права"
+  },
+  "r_sub": {
+    "it": "I pilastri fondamentali dell'utopia, oltre a quanto già scritto nel manifesto: le libertà e le tutele che ogni cittadino porta con sé.",
+    "en": "The fundamental pillars of the utopia, beyond what is already written in the manifesto: the freedoms and protections every citizen carries with them.",
+    "de": "Die tragenden Säulen der Utopie, über das Manifest hinaus: die Freiheiten und Schutzrechte, die jeder Bürger mit sich trägt.",
+    "ru": "Основные опоры утопии, помимо уже написанного в манифесте: свободы и защита, которые каждый гражданин носит с собой."
+  },
+  "r_art": {
+    "it": "Articolo",
+    "en": "Article",
+    "de": "Artikel",
+    "ru": "Статья"
+  },
+  "r_1_t": {
+    "it": "Uguaglianza e non discriminazione",
+    "en": "Equality and non-discrimination",
+    "de": "Gleichheit und Nichtdiskriminierung",
+    "ru": "Равенство и недопустимость дискриминации"
+  },
+  "r_1_d": {
+    "it": "Nessuno può essere discriminato per genere, identità di genere, orientamento sessuale, origine, aspetto o condizione economica. La comunità LGBTQIA+ e i femboy, simbolo stesso del movimento, godono di piena tutela e rappresentanza.",
+    "en": "No one may be discriminated against for gender, gender identity, sexual orientation, origin, appearance or economic condition. The LGBTQIA+ community and femboys, the very symbol of the movement, enjoy full protection and representation.",
+    "de": "Niemand darf wegen Geschlecht, Geschlechtsidentität, sexueller Orientierung, Herkunft, Aussehen oder wirtschaftlicher Lage diskriminiert werden. Die LGBTQIA+-Gemeinschaft und die Femboys, das eigentliche Symbol der Bewegung, genießen vollen Schutz und volle Vertretung.",
+    "ru": "Никого нельзя дискриминировать по полу, гендерной идентичности, сексуальной ориентации, происхождению, внешности или экономическому положению. Сообщество ЛГБТКИА+ и фембои, сам символ движения, пользуются полной защитой и представительством."
+  },
+  "r_2_t": {
+    "it": "Libertà di espressione e di stampa",
+    "en": "Freedom of expression and of the press",
+    "de": "Meinungs- und Pressefreiheit",
+    "ru": "Свобода слова и печати"
+  },
+  "r_2_d": {
+    "it": "Ogni cittadino ha diritto a esprimere liberamente il proprio pensiero, anche in forma artistica o giornalistica, purché non inciti alla violenza o all'odio. L'informazione pubblica è libera, plurale e indipendente dal potere economico.",
+    "en": "Every citizen has the right to freely express their thoughts, including in artistic or journalistic form, as long as they do not incite violence or hatred. Public information is free, plural and independent from economic power.",
+    "de": "Jeder Bürger hat das Recht, seine Gedanken frei zu äußern, auch in künstlerischer oder journalistischer Form, solange er nicht zu Gewalt oder Hass aufruft. Öffentliche Information ist frei, vielfältig und unabhängig von wirtschaftlicher Macht.",
+    "ru": "Каждый гражданин вправе свободно выражать свои мысли, в том числе в художественной или журналистской форме, если не призывает к насилию или ненависти. Общественная информация свободна, разнообразна и независима от экономической власти."
+  },
+  "r_3_t": {
+    "it": "Libertà di coscienza e di culto",
+    "en": "Freedom of conscience and worship",
+    "de": "Gewissens- und Religionsfreiheit",
+    "ru": "Свобода совести и вероисповедания"
+  },
+  "r_3_d": {
+    "it": "Ogni fede, o l'assenza di essa, è rispettata allo stesso modo. Nessuna religione ha un ruolo privilegiato nello Stato noskyniano.",
+    "en": "Every faith, or the lack of one, is respected equally. No religion has a privileged role in the Noskynian State.",
+    "de": "Jeder Glaube – oder dessen Fehlen – wird gleichermaßen respektiert. Keine Religion hat im noskynischen Staat eine Vorrangstellung.",
+    "ru": "Любая вера, как и её отсутствие, уважается одинаково. Ни одна религия не имеет привилегированной роли в носкинском государстве."
+  },
+  "r_4_t": {
+    "it": "Diritto alla salute, fisica e mentale",
+    "en": "Right to health, physical and mental",
+    "de": "Recht auf körperliche und seelische Gesundheit",
+    "ru": "Право на физическое и психическое здоровье"
+  },
+  "r_4_d": {
+    "it": "La sanità pubblica è universale e gratuita, e comprende la salute mentale allo stesso livello di quella fisica, senza stigma né discriminazione nell'accesso alle cure.",
+    "en": "Public healthcare is universal and free, and treats mental health on the same level as physical health, with no stigma or discrimination in access to care.",
+    "de": "Das öffentliche Gesundheitswesen ist allgemein und kostenlos und behandelt die psychische Gesundheit auf der gleichen Stufe wie die körperliche – ohne Stigma und Diskriminierung beim Zugang zur Behandlung.",
+    "ru": "Общественное здравоохранение всеобщее и бесплатное, психическое здоровье приравнивается к физическому, без стигмы и дискриминации в доступе к лечению."
+  },
+  "r_5_t": {
+    "it": "Diritto alla casa e a un reddito minimo",
+    "en": "Right to housing and a minimum income",
+    "de": "Recht auf Wohnen und ein Mindesteinkommen",
+    "ru": "Право на жильё и минимальный доход"
+  },
+  "r_5_d": {
+    "it": "Nessun cittadino può restare privo di un'abitazione dignitosa. Il Minimo Vitale Levvino garantisce un pavimento economico sotto il quale nessuno può scendere.",
+    "en": "No citizen may be left without decent housing. The Levvino Minimum Standard guarantees an economic floor below which no one can fall.",
+    "de": "Kein Bürger darf ohne menschenwürdige Unterkunft bleiben. Das Levvino-Existenzminimum garantiert einen wirtschaftlichen Boden, unter den niemand fallen kann.",
+    "ru": "Ни один гражданин не должен остаться без достойного жилья. Леввинский прожиточный минимум гарантирует экономическое дно, ниже которого никто не упадёт."
+  },
+  "r_6_t": {
+    "it": "Diritto a un lavoro dignitoso",
+    "en": "Right to decent work",
+    "de": "Recht auf menschenwürdige Arbeit",
+    "ru": "Право на достойный труд"
+  },
+  "r_6_d": {
+    "it": "Ogni cittadino ha diritto a un impiego equo, in condizioni sicure, con orari sostenibili e tutele contro lo sfruttamento, indipendentemente dal settore o dal tipo di contratto.",
+    "en": "Every citizen has the right to fair employment in safe conditions, with sustainable hours and protection against exploitation, regardless of sector or type of contract.",
+    "de": "Jeder Bürger hat Anspruch auf faire Beschäftigung unter sicheren Bedingungen, mit tragbaren Arbeitszeiten und Schutz vor Ausbeutung – unabhängig von Branche oder Vertragsart.",
+    "ru": "Каждый гражданин имеет право на справедливую работу в безопасных условиях, с посильным графиком и защитой от эксплуатации, независимо от отрасли и вида договора."
+  },
+  "r_7_t": {
+    "it": "Diritto alla privacy e all'autodeterminazione digitale",
+    "en": "Right to privacy and digital self-determination",
+    "de": "Recht auf Privatsphäre und digitale Selbstbestimmung",
+    "ru": "Право на частную жизнь и цифровое самоопределение"
+  },
+  "r_7_d": {
+    "it": "I dati personali di ogni cittadino sono protetti da ogni forma di sorveglianza indebita, sia pubblica che privata. Ognuno decide come e con chi condividere le proprie informazioni.",
+    "en": "Every citizen's personal data is protected from any form of undue surveillance, public or private. Everyone decides how and with whom to share their information.",
+    "de": "Die persönlichen Daten jedes Bürgers sind vor jeder Form unzulässiger Überwachung geschützt, ob öffentlich oder privat. Jeder entscheidet selbst, wie und mit wem er seine Informationen teilt.",
+    "ru": "Личные данные каждого гражданина защищены от любой неправомерной слежки, государственной или частной. Каждый сам решает, как и с кем делиться своей информацией."
+  },
+  "r_8_t": {
+    "it": "Diritto a un ambiente sano",
+    "en": "Right to a healthy environment",
+    "de": "Recht auf eine gesunde Umwelt",
+    "ru": "Право на здоровую окружающую среду"
+  },
+  "r_8_d": {
+    "it": "L'accesso a aria, acqua e territorio non inquinati è un diritto e non un privilegio. Il modello energetico noskyniano, fondato sul nucleare pulito di nuova generazione, è posto al servizio di questo diritto.",
+    "en": "Access to unpolluted air, water and land is a right, not a privilege. The Noskynian energy model, based on clean next-generation nuclear power, serves this right.",
+    "de": "Der Zugang zu unverschmutzter Luft, sauberem Wasser und intakter Natur ist ein Recht und kein Privileg. Das noskynische Energiemodell auf Basis sauberer Kernkraft der neuen Generation dient diesem Recht.",
+    "ru": "Доступ к чистому воздуху, воде и земле — это право, а не привилегия. Носкинская энергетическая модель, основанная на чистой атомной энергии нового поколения, служит этому праву."
+  },
+  "r_9_t": {
+    "it": "Partecipazione diretta alla vita pubblica",
+    "en": "Direct participation in public life",
+    "de": "Direkte Teilhabe am öffentlichen Leben",
+    "ru": "Прямое участие в общественной жизни"
+  },
+  "r_9_d": {
+    "it": "Oltre alla rappresentanza, ogni cittadino può proporre e votare referendum su questioni di interesse collettivo, contribuendo direttamente alle decisioni che riguardano la comunità.",
+    "en": "Besides representation, every citizen can propose and vote on referendums on matters of collective interest, directly contributing to decisions that affect the community.",
+    "de": "Neben der Vertretung kann jeder Bürger Volksentscheide zu Fragen von allgemeinem Interesse vorschlagen und darüber abstimmen und so direkt an Entscheidungen mitwirken, die die Gemeinschaft betreffen.",
+    "ru": "Помимо представительства, каждый гражданин может предлагать референдумы по вопросам общего интереса и голосовать на них, напрямую участвуя в решениях, касающихся общества."
+  }
+}

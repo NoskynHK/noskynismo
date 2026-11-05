@@ -1,0 +1,74 @@
+{
+  "a_title": {
+    "it": "L'Inno del Noskynismo",
+    "en": "The Anthem of Noskynismo",
+    "de": "Die Hymne des Noskynismo",
+    "ru": "Гимн носкинизма"
+  },
+  "a_sub": {
+    "it": "L'inno ufficiale del movimento. Alza il volume e lasciati portare.",
+    "en": "The movement's official anthem. Turn it up and let it carry you.",
+    "de": "Die offizielle Hymne der Bewegung. Dreh auf und lass dich tragen.",
+    "ru": "Официальный гимн движения. Сделай погромче и позволь ему увлечь тебя."
+  },
+  "a_track": {
+    "it": "Inno del Noskynismo",
+    "en": "Anthem of Noskynismo",
+    "de": "Hymne des Noskynismo",
+    "ru": "Гимн носкинизма"
+  },
+  "a_label": {
+    "it": "Inno ufficiale",
+    "en": "Official anthem",
+    "de": "Offizielle Hymne",
+    "ru": "Официальный гимн"
+  },
+  "a_play": {
+    "it": "Riproduci",
+    "en": "Play",
+    "de": "Abspielen",
+    "ru": "Воспроизвести"
+  },
+  "a_pause": {
+    "it": "Pausa",
+    "en": "Pause",
+    "de": "Pause",
+    "ru": "Пауза"
+  },
+  "a_seek": {
+    "it": "Posizione del brano",
+    "en": "Track position",
+    "de": "Position im Stück",
+    "ru": "Позиция в треке"
+  },
+  "a_vol": {
+    "it": "Volume",
+    "en": "Volume",
+    "de": "Lautstärke",
+    "ru": "Громкость"
+  },
+  "a_loop": {
+    "it": "Ripeti",
+    "en": "Repeat",
+    "de": "Wiederholen",
+    "ru": "Повтор"
+  },
+  "a_dl": {
+    "it": "Scarica l'inno (MP3)",
+    "en": "Download the anthem (MP3)",
+    "de": "Hymne herunterladen (MP3)",
+    "ru": "Скачать гимн (MP3)"
+  },
+  "a_lyrics": {
+    "it": "Il testo",
+    "en": "Lyrics",
+    "de": "Der Text",
+    "ru": "Текст"
+  },
+  "a_err": {
+    "it": "Impossibile riprodurre l'audio. Prova a scaricarlo.",
+    "en": "Unable to play the audio. Try downloading it.",
+    "de": "Audio kann nicht abgespielt werden. Versuche den Download.",
+    "ru": "Не удаётся воспроизвести аудио. Попробуй скачать его."
+  }
+}

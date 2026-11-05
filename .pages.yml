@@ -1,0 +1,2222 @@
+# Configurazione di Pages CMS (https://pagescms.org) — generata da build/cms.py
+media:
+  - name: immagini
+    label: Immagini
+    input: assets/img/uploads
+    output: /assets/img/uploads
+    categories: [image]
+    rename: safe
+  - name: documenti
+    label: Documenti (PDF)
+    input: assets/docs
+    output: /assets/docs
+    extensions: [pdf]
+    rename: safe
+content:
+  - name: pagine
+    label: "✨ Pagine (crea e modifica)"
+    type: file
+    path: content/pagine.json
+    format: json
+    list: true
+    fields:
+      - { name: titolo, label: Titolo della pagina, type: string }
+      - { name: slug, label: "Indirizzo (solo lettere minuscole e trattini, es. eventi-2026)", type: string }
+      - { name: sottotitolo, label: Sottotitolo, type: string }
+      - { name: menu, label: Mostra nel menu in alto, type: boolean }
+      - name: blocchi
+        label: Contenuto (aggiungi blocchi)
+        type: block
+        list: true
+        blockKey: tipo
+        blocks:
+          - name: testo
+            label: Testo
+            fields:
+              - { name: titolo, label: Titolo (facoltativo), type: string }
+              - { name: testo, label: Testo, type: rich-text, options: { format: html } }
+          - name: immagine
+            label: Immagine
+            fields:
+              - { name: immagine, label: Immagine, type: image, options: { media: immagini } }
+              - { name: didascalia, label: Didascalia, type: string }
+          - name: citazione
+            label: Citazione
+            fields:
+              - { name: testo, label: Citazione, type: text }
+              - { name: autore, label: Autore, type: string }
+          - name: elenco
+            label: Elenco puntato
+            fields:
+              - { name: titolo, label: Titolo (facoltativo), type: string }
+              - { name: voci, label: Voci, type: string, list: true }
+          - name: pulsante
+            label: Pulsante
+            fields:
+              - { name: etichetta, label: Scritta sul pulsante, type: string }
+              - { name: link, label: "Link (es. #manifesto oppure https://...)", type: string }
+          - name: video
+            label: Video YouTube
+            fields:
+              - { name: link, label: Link del video YouTube, type: string }
+          - name: file
+            label: File da scaricare
+            fields:
+              - { name: etichetta, label: Nome del file, type: string }
+              - { name: file, label: File, type: file, options: { media: documenti } }
+  - name: testi-generali
+    label: "📝 Menu, titoli e piè di pagina"
+    type: file
+    path: content/testi-generali.json
+    format: json
+    fields:
+      - name: nav_home
+        label: "Home"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_manifesto
+        label: "Manifesto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_rights
+        label: "Diritti"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_economy
+        label: "Economia"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_culture
+        label: "Cultura"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_anthem
+        label: "Inno"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_card
+        label: "Tessera"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_join
+        label: "Partecipa"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_menu
+        label: "Apri il menu"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_theme
+        label: "Cambia tema chiaro/scuro"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_top
+        label: "Torna su"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_close
+        label: "Chiudi"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_skip
+        label: "Vai al contenuto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_lang
+        label: "Lingua"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_emblem
+        label: "Emblema del Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_share
+        label: "Condividi"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: ui_copied
+        label: "Link copiato!"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_home
+        label: "Il Noskynismo — Manifesto del Movimento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_manifesto
+        label: "Manifesto — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_rights
+        label: "Diritti — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_economy
+        label: "Economia — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_culture
+        label: "Cultura & Simbolo — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_anthem
+        label: "L'Inno — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_card
+        label: "Tessera — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_join
+        label: "Partecipa — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: meta_desc
+        label: "Il Noskynismo: l'utopia di libertà, uguaglianza e amore di NoskynHK &…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_verify
+        label: "Verifica tessera — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: f_text
+        label: "Il Noskynismo — un'idea di NoskynHK &amp; Sig.Lev. Un progetto scolas…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: x_title
+        label: "Свобода"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: x_sub
+        label: "Svoboda · Libertà"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: x_text
+        label: "Hai trovato il segreto più nascosto. La libertà non si regala: si cer…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-home
+    label: "📝 Pagina Home"
+    type: file
+    path: content/testi-home.json
+    format: json
+    fields:
+      - name: h_kicker
+        label: "Manifesto del Movimento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_title
+        label: "Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_lede
+        label: "Un'idea di NoskynHK &amp; Sig.Lev: un'utopia concreta, nata come prog…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_cta1
+        label: "Leggi il manifesto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_cta2
+        label: "Scarica il documento ufficiale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_quote
+        label: "“La vera libertà non è fare ciò che si vuole, ma permettere a ciascun…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_quote_src
+        label: "Principio fondativo del Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_p1_t
+        label: "Libertà"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_p1_d
+        label: "Libero arbitrio e libertà d'essere: il valore che sovrasta tutti gli …"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_p2_t
+        label: "Uguaglianza"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_p2_d
+        label: "Nessuna discriminazione: parità assoluta di diritti e di dignità per …"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_p3_t
+        label: "Amore"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_p3_d
+        label: "Ogni forma di relazione è accolta, senza ostacoli imposti da preconce…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_s1
+        label: "articoli nella Carta dei Diritti"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_s2
+        label: "tagli di Levvino"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_s3
+        label: "inno ufficiale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_s4
+        label: "lingue"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_explore_t
+        label: "Esplora il movimento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_explore_d
+        label: "Il sito è diviso per aree: la storia e l'ideologia, i diritti fondame…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c1_d
+        label: "La storia, l'organizzazione e l'amministrazione del popolo."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c2_d
+        label: "La Carta dei Diritti Noskyniani: libertà, uguaglianza, tutele."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c3_d
+        label: "Il Minimo Vitale Levvino, la meritocrazia, la B.C.U."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c4_d
+        label: "Istruzione, arte, moda e il significato dell'emblema."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c5_d
+        label: "Ascolta l'inno ufficiale del movimento."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c6_d
+        label: "Crea e scarica la tua tessera di adesione."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_c7_d
+        label: "Proponi idee, modifiche e aggiunte."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_poster_t
+        label: "Il poster del Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_poster_d
+        label: "Bandiere arcobaleno, il simbolo della pace e una nuova generazione ch…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_poster_btn
+        label: "Scarica il poster"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_poster_alt
+        label: "Poster del Noskynismo con bandiere arcobaleno e il logo del movimento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_doc_t
+        label: "Il documento ufficiale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_doc_d
+        label: "Tutto il Noskynismo in un unico PDF: storia, diritti, economia e cult…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: h_doc_btn
+        label: "Scarica il PDF"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-manifesto
+    label: "📝 Pagina Manifesto"
+    type: file
+    path: content/testi-manifesto.json
+    format: json
+    fields:
+      - name: m_title
+        label: "Il Manifesto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_sub
+        label: "Dal tramonto delle vecchie ideologie alla nuova organizzazione e ammi…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_hist_t
+        label: "La Storia"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_hist_d
+        label: "Il percorso che porta ai valori noskyniani."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_h1_t
+        label: "Il Tramonto del Vecchio Mondo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_h1_d
+        label: "Fin dagli albori della civiltà, le ideologie convenzionali hanno sist…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_h2_t
+        label: "La Rinascita dei Valori Noskyniani"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_h2_d
+        label: "I nostri valori possiedono la forza di rivitalizzare tutto ciò che l'…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_h3_t
+        label: "La Visione e l'Avvento della Nuova Era"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_h3_d
+        label: "Un mondo in cui libertà, libero arbitrio, amore incondizionato e risp…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_org_t
+        label: "Organizzazione del Popolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_org_q
+        label: "Bandire l'individualismo, non l'individuo."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_o1_t
+        label: "Dall'Utopia alla Realizzazione"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_o1_d
+        label: "La visione del Noskynismo trascende la speculazione filosofica per co…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_o2_t
+        label: "Uguaglianza Universale e Giustizia Sociale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_o2_d
+        label: "Nell'era noskyniana non troveranno più spazio razzismo, discriminazio…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_o3_t
+        label: "La Liberazione degli Affetti e la Tutela dei Femboy"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_o3_d
+        label: "Ogni forma di relazione è accolta senza ostacoli imposti da preconcet…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_adm_t
+        label: "Amministrazione del Popolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_adm_d
+        label: "Neutralità, coesione e rieducazione etica al posto della punizione."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_a1_t
+        label: "Neutralità e Coesione Universale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_a1_d
+        label: "Per preservare una coesione duratura tra i popoli, il Noskynismo adot…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_a2_t
+        label: "Il Sistema di Giustizia e Rieducazione"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_a2_d
+        label: "Chi viola questi principi non viene punito in modo tradizionale, ma a…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_a3_t
+        label: "La Tabula Rasa e l'Innovazione Scolastica"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: m_a3_d
+        label: "Nuovi sistemi scolastici, radicalmente innovativi, avranno il compito…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-diritti
+    label: "📝 Pagina Diritti"
+    type: file
+    path: content/testi-diritti.json
+    format: json
+    fields:
+      - name: r_title
+        label: "I Diritti"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_sub
+        label: "I pilastri fondamentali dell'utopia, oltre a quanto già scritto nel m…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_art
+        label: "Articolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_1_t
+        label: "Uguaglianza e non discriminazione"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_1_d
+        label: "Nessuno può essere discriminato per genere, identità di genere, orien…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_2_t
+        label: "Libertà di espressione e di stampa"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_2_d
+        label: "Ogni cittadino ha diritto a esprimere liberamente il proprio pensiero…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_3_t
+        label: "Libertà di coscienza e di culto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_3_d
+        label: "Ogni fede, o l'assenza di essa, è rispettata allo stesso modo. Nessun…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_4_t
+        label: "Diritto alla salute, fisica e mentale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_4_d
+        label: "La sanità pubblica è universale e gratuita, e comprende la salute men…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_5_t
+        label: "Diritto alla casa e a un reddito minimo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_5_d
+        label: "Nessun cittadino può restare privo di un'abitazione dignitosa. Il Min…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_6_t
+        label: "Diritto a un lavoro dignitoso"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_6_d
+        label: "Ogni cittadino ha diritto a un impiego equo, in condizioni sicure, co…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_7_t
+        label: "Diritto alla privacy e all'autodeterminazione digitale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_7_d
+        label: "I dati personali di ogni cittadino sono protetti da ogni forma di sor…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_8_t
+        label: "Diritto a un ambiente sano"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_8_d
+        label: "L'accesso a aria, acqua e territorio non inquinati è un diritto e non…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_9_t
+        label: "Partecipazione diretta alla vita pubblica"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: r_9_d
+        label: "Oltre alla rappresentanza, ogni cittadino può proporre e votare refer…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-economia
+    label: "📝 Pagina Economia (Levvino e convertitore)"
+    type: file
+    path: content/testi-economia.json
+    format: json
+    fields:
+      - name: e_title
+        label: "La Nuova Economia"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_sub
+        label: "Un pavimento garantito per tutti, un mercato aperto per chi produce d…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_eye
+        label: "Base garantita"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_t
+        label: "Il Minimo Vitale Levvino (M.V.L.)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_d
+        label: "Un diritto strutturale, non un premio, finanziato dalla fiscalità gen…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_l1
+        label: "Istruzione pubblica gratuita fino all'università"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_l2
+        label: "Sanità pubblica universale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_l3
+        label: "Reddito di base mensile per ogni cittadino"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_1_l4
+        label: "Alloggio e trasporti sovvenzionati nelle aree a bassa densità economi…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_eye
+        label: "Fascia meritocratica"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_t
+        label: "Un mercato aperto, sopra la base"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_d
+        label: "Guadagni aggiuntivi e risorse scarse distribuiti secondo criteri misu…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_l1
+        label: "Produttività verificata sul lavoro"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_l2
+        label: "Innovazione e contributo a progetti collettivi"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_l3
+        label: "Risultati in percorsi di istruzione avanzata"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_2_l4
+        label: "Servizio alla comunità"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_3_eye
+        label: "Banca Centrale dell'Unione"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_3_t
+        label: "Il ruolo della B.C.U."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_3_d
+        label: "Emette il Levvino e risponde di tre compiti:"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_3_l1
+        label: "Garantire stabilità dei prezzi e valore della moneta"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_3_l2
+        label: "Finanziare il M.V.L. tramite la leva fiscale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_3_l3
+        label: "Evitare che la meritocrazia generi rendite permanenti"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_anti_t
+        label: "Il Principio Anti-Rendita"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_anti_d
+        label: "La ricchezza accumulata tramite il merito è tassata più severamente s…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_lev_t
+        label: "Il Levvino — La Valuta del Nuovo Secolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_lev_d
+        label: "Ogni taglio del Levvino, emesso dalla Banca Centrale dell'Unione, raf…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n1
+        label: "1 Levvino"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n1_p
+        label: "Arco e ponte romano"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n2
+        label: "2 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n2_p
+        label: "Tempio egizio, sul Nilo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n5
+        label: "5 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n5_p
+        label: "Colosseo, Roma"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n10
+        label: "10 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n10_p
+        label: "Partenone, Atene"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n20
+        label: "20 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n20_p
+        label: "Foro Romano, Roma"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n50
+        label: "50 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n50_p
+        label: "Moschea sul Bosforo, Istanbul"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n100
+        label: "100 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n100_p
+        label: "Palazzo sul Canal Grande, Venezia"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n200
+        label: "200 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n200_p
+        label: "Tempio classico, Atene"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n500
+        label: "500 Levvini"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_n500_p
+        label: "Cremlino, Mosca — con la scritta “Svoboda” (libertà) al posto di “Lib…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_t
+        label: "Convertitore Levvino"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_d
+        label: "Quanto vale il tuo denaro nel Noskynismo? Il tasso della B.C.U. è sem…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_cur
+        label: "Valuta"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_eur
+        label: "Euro (€)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_lev
+        label: "Levvini (Lv)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_amount
+        label: "Importo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_swap
+        label: "Inverti direzione"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_res
+        label: "Equivale a"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_notes
+        label: "In banconote:"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_change
+        label: "più spiccioli"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_none
+        label: "Inserisci un importo per vedere il cambio."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: e_cv_note
+        label: "Il Levvino non esiste (ancora): il cambio non vale nei negozi!"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-cultura
+    label: "📝 Pagina Cultura"
+    type: file
+    path: content/testi-cultura.json
+    format: json
+    fields:
+      - name: c_title
+        label: "Cultura del Popolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_sub
+        label: "Istruzione, arte e città aperte: come il Noskynismo immagina la vita …"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_1_t
+        label: "Istruzione"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_1_d
+        label: "Dalla seconda media in poi, un'ora settimanale è dedicata all'educazi…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_2_t
+        label: "Arte e Innovazioni"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_2_d
+        label: "Le città non hanno più confini né mura: sono aperte e collegate tra l…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_3_t
+        label: "Moda"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_3_d
+        label: "Ogni individuo può indossare per strada ciò che meglio esprime la pro…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_sym_t
+        label: "Il Simbolo del Movimento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_sym_d
+        label: "L'emblema ufficiale del Noskynismo, con i suoi elementi e il loro sig…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s1_t
+        label: "Il fiocco centrale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s1_d
+        label: "Cuore dell'emblema: rappresenta i femboy e, più in generale, la comun…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s2_t
+        label: "Stelle e cuori"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s2_d
+        label: "Circondano il fiocco a richiamare l'amore incondizionato e la leggere…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s3_t
+        label: "I rami d'alloro e la corda"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s3_d
+        label: "Il classico richiamo araldico alla dignità e all'unione del popolo, q…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s4_t
+        label: "Il nastro “Libertà”"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s4_d
+        label: "Il valore che sovrasta tutti gli altri nel Noskynismo: nessun diritto…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s5_t
+        label: "“Fond. NoskynHK &amp; Sig. Lev.”"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_s5_d
+        label: "Il riferimento ai due fondatori del movimento, a firma dell'origine e…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_moda_t
+        label: "Le gonne diventano il simbolo distintivo del Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: c_moda_d
+        label: "In questo mondo utopico, ogni individuo cammina per le strade indossa…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-inno
+    label: "📝 Pagina Inno"
+    type: file
+    path: content/testi-inno.json
+    format: json
+    fields:
+      - name: a_title
+        label: "L'Inno del Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_sub
+        label: "L'inno ufficiale del movimento. Alza il volume e lasciati portare."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_track
+        label: "Inno del Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_label
+        label: "Inno ufficiale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_play
+        label: "Riproduci"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_pause
+        label: "Pausa"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_seek
+        label: "Posizione del brano"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_vol
+        label: "Volume"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_loop
+        label: "Ripeti"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_dl
+        label: "Scarica l'inno (MP3)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_lyrics
+        label: "Il testo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: a_err
+        label: "Impossibile riprodurre l'audio. Prova a scaricarlo."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-tessera
+    label: "📝 Pagina Tessera"
+    type: file
+    path: content/testi-tessera.json
+    format: json
+    fields:
+      - name: k_title
+        label: "La Tessera del Movimento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_sub
+        label: "Scrivi il tuo nome, crea la tua tessera di adesione al Noskynismo e s…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_name
+        label: "Nome da inserire sulla tessera"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_name_ph
+        label: "Es. Mario Rossi"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_role
+        label: "Ruolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_r1
+        label: "Cittadino/a Noskyniano/a"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_r2
+        label: "Simpatizzante"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_r3
+        label: "Sostenitore / Sostenitrice"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_code_l
+        label: "Hai un codice segreto?"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_code_ph
+        label: "Codice"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_code_btn
+        label: "Sblocca"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_code_ok
+        label: "Sbloccato! Ora puoi scrivere il tuo ruolo personalizzato."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_code_bad
+        label: "Codice errato."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_custom
+        label: "Ruolo personalizzato"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_custom_ph
+        label: "Es. Ministro/a delle Gonne"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_dl
+        label: "Scarica la tessera (PNG)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_saved
+        label: "Tessera scaricata!"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_err
+        label: "Non sono riuscito a creare l'immagine. Riprova."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_cv_head
+        label: "TESSERA DI ADESIONE"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_cv_issued
+        label: "Intestata a"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_cv_role
+        label: "Ruolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_cv_since
+        label: "Membro dal"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_cv_default
+        label: "Nome Cognome"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_cv_motto
+        label: "“Libertà” — Fond. NoskynHK & Sig. Lev."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_verify
+        label: "Verifica una tessera →"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_note
+        label: "L'immagine viene creata sul tuo dispositivo: il tuo nome non viene in…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_print
+        label: "Stampa la tessera (PDF)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_print_hint
+        label: "PDF A4 con fronte e retro a misura reale (85,6 × 54 mm), pronto per u…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_printing
+        label: "Preparo il PDF…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: k_printed
+        label: "PDF pronto!"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-partecipa
+    label: "📝 Pagina Partecipa"
+    type: file
+    path: content/testi-partecipa.json
+    format: json
+    fields:
+      - name: j_title
+        label: "Partecipa"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_sub
+        label: "Il Noskynismo è completo, ma le idee migliori nascono dal popolo. Pro…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_form_t
+        label: "Invia la tua idea"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_name
+        label: "Nome (facoltativo)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_email
+        label: "Email (facoltativa, se vuoi una risposta)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_type
+        label: "Di cosa si tratta?"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_t1
+        label: "Proposta di modifica"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_t2
+        label: "Nuova aggiunta al Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_t3
+        label: "Altro"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_msg
+        label: "La tua idea"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_msg_ph
+        label: "Scrivi qui la tua proposta…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_send
+        label: "Invia"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_sending
+        label: "Invio in corso…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_ok
+        label: "Grazie! La tua idea è arrivata."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_err
+        label: "Qualcosa è andato storto. Riprova tra poco."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_req
+        label: "Scrivi almeno qualche parola prima di inviare."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_doc_t
+        label: "Il documento ufficiale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_doc_d
+        label: "Il testo completo del Noskynismo in formato PDF: manifesto, carta dei…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_doc_btn
+        label: "Scarica il PDF"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: j_doc_meta
+        label: "PDF · Documento ufficiale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-verifica
+    label: "📝 Pagina Verifica"
+    type: file
+    path: content/testi-verifica.json
+    format: json
+    fields:
+      - name: v_title
+        label: "Verifica tessera"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_sub
+        label: "Inserisci il codice N. della tessera, oppure scansiona il suo QR code…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_code
+        label: "Codice della tessera (N.)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_btn
+        label: "Verifica"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_ok
+        label: "Tessera valida"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_bad
+        label: "Codice non valido"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_bad_d
+        label: "Il codice è incompleto, contiene un errore oppure è stato modificato."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_holder
+        label: "Intestata a"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_role
+        label: "Ruolo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_since
+        label: "Membro dal"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: v_note
+        label: "La verifica controlla che il codice sia stato generato da questo sito…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }

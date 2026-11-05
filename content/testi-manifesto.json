@@ -1,0 +1,158 @@
+{
+  "m_title": {
+    "it": "Il Manifesto",
+    "en": "The Manifesto",
+    "de": "Das Manifest",
+    "ru": "Манифест"
+  },
+  "m_sub": {
+    "it": "Dal tramonto delle vecchie ideologie alla nuova organizzazione e amministrazione del popolo noskyniano.",
+    "en": "From the sunset of the old ideologies to the new organisation and administration of the Noskynian people.",
+    "de": "Vom Untergang der alten Ideologien zur neuen Organisation und Verwaltung des noskynischen Volkes.",
+    "ru": "От заката старых идеологий к новой организации и управлению носкинским народом."
+  },
+  "m_hist_t": {
+    "it": "La Storia",
+    "en": "The History",
+    "de": "Die Geschichte",
+    "ru": "История"
+  },
+  "m_hist_d": {
+    "it": "Il percorso che porta ai valori noskyniani.",
+    "en": "The path that leads to Noskynian values.",
+    "de": "Der Weg zu den noskynischen Werten.",
+    "ru": "Путь, который ведёт к носкинским ценностям."
+  },
+  "m_h1_t": {
+    "it": "Il Tramonto del Vecchio Mondo",
+    "en": "The Sunset of the Old World",
+    "de": "Der Untergang der alten Welt",
+    "ru": "Закат старого мира"
+  },
+  "m_h1_d": {
+    "it": "Fin dagli albori della civiltà, le ideologie convenzionali hanno sistematicamente tradito e deluso la popolazione, conducendola verso la disperazione e l'annientamento delle libertà fondamentali dell'essere umano.",
+    "en": "Since the dawn of civilisation, conventional ideologies have systematically betrayed and disappointed the population, leading it towards despair and the annihilation of the fundamental freedoms of the human being.",
+    "de": "Seit den Anfängen der Zivilisation haben konventionelle Ideologien die Bevölkerung systematisch verraten und enttäuscht und sie in die Verzweiflung und zur Vernichtung der Grundfreiheiten des Menschen geführt.",
+    "ru": "С рассвета цивилизации традиционные идеологии систематически предавали и разочаровывали народ, ведя его к отчаянию и уничтожению основных свобод человека."
+  },
+  "m_h2_t": {
+    "it": "La Rinascita dei Valori Noskyniani",
+    "en": "The Rebirth of Noskynian Values",
+    "de": "Die Wiedergeburt der noskynischen Werte",
+    "ru": "Возрождение носкинских ценностей"
+  },
+  "m_h2_d": {
+    "it": "I nostri valori possiedono la forza di rivitalizzare tutto ciò che l'umanità è stata costretta a cedere in un mondo dominato dalla corruzione, dall'avidità e dalla gelosia — restituendolo ai suoi veri figli.",
+    "en": "Our values have the strength to revitalise everything humanity was forced to give up in a world ruled by corruption, greed and jealousy — returning it to its true children.",
+    "de": "Unsere Werte haben die Kraft, alles wiederzubeleben, was die Menschheit in einer von Korruption, Gier und Eifersucht beherrschten Welt aufgeben musste – und es ihren wahren Kindern zurückzugeben.",
+    "ru": "Наши ценности способны оживить всё, от чего человечеству пришлось отказаться в мире, где правят коррупция, жадность и зависть, — и вернуть это его настоящим детям."
+  },
+  "m_h3_t": {
+    "it": "La Visione e l'Avvento della Nuova Era",
+    "en": "The Vision and the Dawn of the New Era",
+    "de": "Die Vision und der Anbruch der neuen Ära",
+    "ru": "Видение и рассвет новой эры"
+  },
+  "m_h3_d": {
+    "it": "Un mondo in cui libertà, libero arbitrio, amore incondizionato e rispetto assoluto cessano di essere chimere per diventare realtà — guidato dai valori spirituali e morali fondati dal movimento.",
+    "en": "A world in which freedom, free will, unconditional love and absolute respect stop being chimeras and become reality — guided by the spiritual and moral values founded by the movement.",
+    "de": "Eine Welt, in der Freiheit, freier Wille, bedingungslose Liebe und absoluter Respekt keine Hirngespinste mehr sind, sondern Wirklichkeit werden – geleitet von den geistigen und moralischen Werten der Bewegung.",
+    "ru": "Мир, в котором свобода, свобода воли, безусловная любовь и абсолютное уважение перестают быть химерами и становятся реальностью — под руководством духовных и моральных ценностей, заложенных движением."
+  },
+  "m_org_t": {
+    "it": "Organizzazione del Popolo",
+    "en": "Organisation of the People",
+    "de": "Organisation des Volkes",
+    "ru": "Организация народа"
+  },
+  "m_org_q": {
+    "it": "Bandire l'individualismo, non l'individuo.",
+    "en": "Ban individualism, not the individual.",
+    "de": "Den Individualismus verbannen, nicht das Individuum.",
+    "ru": "Изгнать индивидуализм, а не личность."
+  },
+  "m_o1_t": {
+    "it": "Dall'Utopia alla Realizzazione",
+    "en": "From Utopia to Realisation",
+    "de": "Von der Utopie zur Verwirklichung",
+    "ru": "От утопии к воплощению"
+  },
+  "m_o1_d": {
+    "it": "La visione del Noskynismo trascende la speculazione filosofica per configurarsi come un'utopia concretamente realizzabile, guidando la collettività verso un cambiamento radicale orientato al bene comune — superando le filosofie individualiste su cui si fonda il capitalismo odierno.",
+    "en": "The vision of Noskynismo goes beyond philosophical speculation to take shape as a concretely achievable utopia, guiding the community towards radical change oriented to the common good — overcoming the individualist philosophies on which today's capitalism is built.",
+    "de": "Die Vision des Noskynismo geht über philosophische Spekulation hinaus und wird zu einer konkret verwirklichbaren Utopie, die die Gemeinschaft zu einem radikalen, dem Gemeinwohl verpflichteten Wandel führt – jenseits der individualistischen Philosophien, auf denen der heutige Kapitalismus beruht.",
+    "ru": "Видение носкинизма выходит за рамки философских рассуждений и становится реально осуществимой утопией, ведущей общество к радикальным переменам во имя общего блага — в преодоление индивидуалистических философий, на которых держится современный капитализм."
+  },
+  "m_o2_t": {
+    "it": "Uguaglianza Universale e Giustizia Sociale",
+    "en": "Universal Equality and Social Justice",
+    "de": "Universelle Gleichheit und soziale Gerechtigkeit",
+    "ru": "Всеобщее равенство и социальная справедливость"
+  },
+  "m_o2_d": {
+    "it": "Nell'era noskyniana non troveranno più spazio razzismo, discriminazione e disuguaglianza. Ogni individuo gode di parità assoluta in termini di libertà, diritti e dignità sociale; i retaggi discriminatori del vecchio mondo sono proibiti e affrontati con percorsi di riabilitazione etica.",
+    "en": "In the Noskynian era there is no longer room for racism, discrimination and inequality. Every individual enjoys absolute parity in freedom, rights and social dignity; the discriminatory legacies of the old world are forbidden and addressed through paths of ethical rehabilitation.",
+    "de": "In der noskynischen Ära ist kein Platz mehr für Rassismus, Diskriminierung und Ungleichheit. Jeder Mensch genießt absolute Gleichstellung in Freiheit, Rechten und sozialer Würde; die diskriminierenden Altlasten der alten Welt sind verboten und werden durch Wege der ethischen Rehabilitation aufgearbeitet.",
+    "ru": "В носкинскую эру больше нет места расизму, дискриминации и неравенству. Каждый человек пользуется абсолютным равенством в свободе, правах и социальном достоинстве; дискриминационное наследие старого мира запрещено и преодолевается путём этической реабилитации."
+  },
+  "m_o3_t": {
+    "it": "La Liberazione degli Affetti e la Tutela dei Femboy",
+    "en": "The Liberation of Affection and the Protection of Femboys",
+    "de": "Die Befreiung der Zuneigung und der Schutz der Femboys",
+    "ru": "Освобождение чувств и защита фембоев"
+  },
+  "m_o3_d": {
+    "it": "Ogni forma di relazione è accolta senza ostacoli imposti da preconcetti egoistici. Il valore di un individuo non risiede nel genere o nelle origini, ma nel contributo che offre alla società — e una legge dedicata tutela i femboy nel mostrarsi liberamente per ciò che sono.",
+    "en": "Every form of relationship is welcomed without obstacles imposed by selfish prejudice. An individual's worth lies not in gender or origins but in what they contribute to society — and a dedicated law protects femboys in showing themselves freely for who they are.",
+    "de": "Jede Form von Beziehung wird ohne Hindernisse durch egoistische Vorurteile willkommen geheißen. Der Wert eines Menschen liegt nicht in Geschlecht oder Herkunft, sondern in seinem Beitrag zur Gesellschaft – und ein eigenes Gesetz schützt Femboys darin, sich frei so zu zeigen, wie sie sind.",
+    "ru": "Любые отношения принимаются без препятствий, навязанных эгоистичными предрассудками. Ценность человека не в поле и не в происхождении, а в его вкладе в общество — а специальный закон защищает право фембоев свободно быть собой."
+  },
+  "m_adm_t": {
+    "it": "Amministrazione del Popolo",
+    "en": "Administration of the People",
+    "de": "Verwaltung des Volkes",
+    "ru": "Управление народом"
+  },
+  "m_adm_d": {
+    "it": "Neutralità, coesione e rieducazione etica al posto della punizione.",
+    "en": "Neutrality, cohesion and ethical re-education instead of punishment.",
+    "de": "Neutralität, Zusammenhalt und ethische Umerziehung statt Strafe.",
+    "ru": "Нейтралитет, сплочённость и этическое перевоспитание вместо наказания."
+  },
+  "m_a1_t": {
+    "it": "Neutralità e Coesione Universale",
+    "en": "Neutrality and Universal Cohesion",
+    "de": "Neutralität und universeller Zusammenhalt",
+    "ru": "Нейтралитет и всеобщая сплочённость"
+  },
+  "m_a1_d": {
+    "it": "Per preservare una coesione duratura tra i popoli, il Noskynismo adotta la neutralità assoluta come pilastro: nessun compromesso con dottrine che giustifichino violenza o conflitto bellico, e nessuna azione che possa arrecare sofferenza psicologica o fisica.",
+    "en": "To preserve lasting cohesion among peoples, Noskynismo adopts absolute neutrality as a pillar: no compromise with doctrines that justify violence or war, and no action that could cause psychological or physical suffering.",
+    "de": "Um einen dauerhaften Zusammenhalt der Völker zu bewahren, macht der Noskynismo absolute Neutralität zur Säule: kein Kompromiss mit Lehren, die Gewalt oder Krieg rechtfertigen, und keine Handlung, die seelisches oder körperliches Leid verursachen könnte.",
+    "ru": "Чтобы сохранить прочное единство народов, носкинизм делает абсолютный нейтралитет своей опорой: никаких компромиссов с учениями, оправдывающими насилие или войну, и никаких действий, способных причинить душевные или физические страдания."
+  },
+  "m_a2_t": {
+    "it": "Il Sistema di Giustizia e Rieducazione",
+    "en": "The System of Justice and Re-education",
+    "de": "Das System aus Gerechtigkeit und Umerziehung",
+    "ru": "Система правосудия и перевоспитания"
+  },
+  "m_a2_d": {
+    "it": "Chi viola questi principi non viene punito in modo tradizionale, ma affronta un percorso di rigenerazione etica — settimane di rieducazione intensiva pensate per dissolvere ogni residuo di aggressività e riportare la mente verso la pacificazione totale.",
+    "en": "Whoever violates these principles is not punished in the traditional way but undergoes a path of ethical regeneration — weeks of intensive re-education designed to dissolve every trace of aggression and bring the mind back towards total pacification.",
+    "de": "Wer gegen diese Prinzipien verstößt, wird nicht auf herkömmliche Weise bestraft, sondern durchläuft einen Weg der ethischen Erneuerung – Wochen intensiver Umerziehung, die jeden Rest von Aggression auflösen und den Geist zur vollständigen Befriedung zurückführen sollen.",
+    "ru": "Нарушитель этих принципов наказывается не традиционным образом, а проходит путь этического возрождения — недели интенсивного перевоспитания, призванные растворить любые следы агрессии и вернуть разум к полному умиротворению."
+  },
+  "m_a3_t": {
+    "it": "La Tabula Rasa e l'Innovazione Scolastica",
+    "en": "The Tabula Rasa and School Innovation",
+    "de": "Die Tabula rasa und die Schulinnovation",
+    "ru": "Чистый лист и школьные инновации"
+  },
+  "m_a3_d": {
+    "it": "Nuovi sistemi scolastici, radicalmente innovativi, avranno il compito di innalzare il livello culturale della popolazione e di rimuovere pregiudizi e retaggi del vecchio mondo, ponendo le basi per una civiltà rigenerata.",
+    "en": "New, radically innovative school systems will raise the cultural level of the population and remove the prejudices and legacies of the old world, laying the foundations of a regenerated civilisation.",
+    "de": "Neue, radikal innovative Schulsysteme sollen das Bildungsniveau der Bevölkerung heben und Vorurteile und Altlasten der alten Welt beseitigen – als Fundament einer erneuerten Zivilisation.",
+    "ru": "Новые, радикально инновационные школьные системы призваны поднять культурный уровень населения и устранить предрассудки и наследие старого мира, заложив основу обновлённой цивилизации."
+  }
+}
