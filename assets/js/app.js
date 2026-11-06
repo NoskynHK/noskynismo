@@ -57,6 +57,7 @@
     updatePlayLabel();
     if (cardReady) drawCard();
     if (cvInit) convRender();
+    if (dynPages) { addDynNav(); if (currentPage() === 'pagina') renderDyn(); }
     if (window.NSK_LYRICS) renderLyrics();
     if (verifyInit && currentPage() === 'verifica') renderVerify();
   }
@@ -65,7 +66,7 @@
   /* ---------------- contenuti modificabili dal CMS ---------------- */
   var dynPages = null;
   function pageTitle(page) {
-    if (page === 'pagina') { var p = findDyn(); return (p && p.titolo ? p.titolo + ' — ' : '') + 'Il Noskynismo'; }
+    if (page === 'pagina') { var p = findDyn(); var tt = p ? pv(p).titolo : ''; return (tt ? tt + ' — ' : '') + 'Il Noskynismo'; }
     return t(TITLE_KEY[page]);
   }
   function getJSON(url) {
@@ -94,6 +95,14 @@
     });
     return Promise.all([texts, pages]);
   }
+  function pv(p) {
+    var base = (p && p.it) || p || {}, L = (p && p[lang]) || {};
+    return {
+      titolo: L.titolo || base.titolo || (p && p.titolo) || (p && p.slug) || '',
+      sottotitolo: L.titolo || L.sottotitolo ? (L.sottotitolo || '') : (base.sottotitolo || ''),
+      blocchi: (L.blocchi && L.blocchi.length) ? L.blocchi : (base.blocchi || [])
+    };
+  }
   function slugOf(s) { return String(s || '').toLowerCase().trim().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, ''); }
   function findDyn() {
     if (!dynPages) return null;
@@ -109,7 +118,7 @@
       [nav, foot].forEach(function (box) {
         if (!box) return;
         var a = document.createElement('a');
-        a.href = '#pagina/' + slugOf(p.slug); a.textContent = p.titolo || p.slug; a.setAttribute('data-dyn', '1');
+        a.href = '#pagina/' + slugOf(p.slug); a.textContent = pv(p).titolo || p.slug; a.setAttribute('data-dyn', '1');
         box.appendChild(a);
       });
     });
@@ -168,8 +177,9 @@
     if (!dynPages) { root.innerHTML = '<section class="page-hero"><div class="wrap"><p>…</p></div></section>'; return; }
     var p = findDyn();
     if (!p) { root.innerHTML = '<section class="page-hero"><div class="wrap"><h1>404</h1><p>Pagina non trovata.</p><p class="dyn-btn"><a class="btn btn-primary" href="#home">Home</a></p></div></section>'; return; }
-    root.innerHTML = '<section class="page-hero"><div class="wrap"><h1>' + esc(p.titolo) + '</h1>' + (p.sottotitolo ? '<p>' + esc(p.sottotitolo) + '</p>' : '') + '</div></section>' +
-      '<section class="block"><div class="wrap dyn-wrap">' + (p.blocchi || []).map(dynBlock).join('') + '</div></section>';
+    var v = pv(p);
+    root.innerHTML = '<section class="page-hero"><div class="wrap"><h1>' + esc(v.titolo) + '</h1>' + (v.sottotitolo ? '<p>' + esc(v.sottotitolo) + '</p>' : '') + '</div></section>' +
+      '<section class="block"><div class="wrap dyn-wrap">' + v.blocchi.map(dynBlock).join('') + '</div></section>';
     observeReveals();
   }
 

@@ -20,50 +20,192 @@ content:
     format: json
     list: true
     fields:
-      - { name: titolo, label: Titolo della pagina, type: string }
       - { name: slug, label: "Indirizzo (solo lettere minuscole e trattini, es. eventi-2026)", type: string }
-      - { name: sottotitolo, label: Sottotitolo, type: string }
       - { name: menu, label: Mostra nel menu in alto, type: boolean }
-      - name: blocchi
-        label: Contenuto (aggiungi blocchi)
-        type: block
-        list: true
-        blockKey: tipo
-        blocks:
-          - name: testo
-            label: Testo
-            fields:
-              - { name: titolo, label: Titolo (facoltativo), type: string }
-              - { name: testo, label: Testo, type: rich-text, options: { format: html } }
-          - name: immagine
-            label: Immagine
-            fields:
-              - { name: immagine, label: Immagine, type: image, options: { media: immagini } }
-              - { name: didascalia, label: Didascalia, type: string }
-          - name: citazione
-            label: Citazione
-            fields:
-              - { name: testo, label: Citazione, type: text }
-              - { name: autore, label: Autore, type: string }
-          - name: elenco
-            label: Elenco puntato
-            fields:
-              - { name: titolo, label: Titolo (facoltativo), type: string }
-              - { name: voci, label: Voci, type: string, list: true }
-          - name: pulsante
-            label: Pulsante
-            fields:
-              - { name: etichetta, label: Scritta sul pulsante, type: string }
-              - { name: link, label: "Link (es. #manifesto oppure https://...)", type: string }
-          - name: video
-            label: Video YouTube
-            fields:
-              - { name: link, label: Link del video YouTube, type: string }
-          - name: file
-            label: File da scaricare
-            fields:
-              - { name: etichetta, label: Nome del file, type: string }
-              - { name: file, label: File, type: file, options: { media: documenti } }
+      - name: it
+        label: "Contenuto in Italiano"
+        type: object
+        fields:
+          - { name: titolo, label: Titolo della pagina, type: string }
+          - { name: sottotitolo, label: Sottotitolo, type: string }
+          - name: blocchi
+            label: Contenuto (aggiungi blocchi)
+            type: block
+            list: true
+            blockKey: tipo
+            blocks:
+              - name: testo
+                label: Testo
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: testo, label: Testo, type: rich-text, options: { format: html } }
+              - name: immagine
+                label: Immagine
+                fields:
+                  - { name: immagine, label: Immagine, type: image, options: { media: immagini } }
+                  - { name: didascalia, label: Didascalia, type: string }
+              - name: citazione
+                label: Citazione
+                fields:
+                  - { name: testo, label: Citazione, type: text }
+                  - { name: autore, label: Autore, type: string }
+              - name: elenco
+                label: Elenco puntato
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: voci, label: Voci, type: string, list: true }
+              - name: pulsante
+                label: Pulsante
+                fields:
+                  - { name: etichetta, label: Scritta sul pulsante, type: string }
+                  - { name: link, label: "Link (es. #manifesto oppure https://...)", type: string }
+              - name: video
+                label: Video YouTube
+                fields:
+                  - { name: link, label: Link del video YouTube, type: string }
+              - name: file
+                label: File da scaricare
+                fields:
+                  - { name: etichetta, label: Nome del file, type: string }
+                  - { name: file, label: File, type: file, options: { media: documenti } }
+      - name: en
+        label: "Contenuto in English (se vuoto si vede l'italiano)"
+        type: object
+        fields:
+          - { name: titolo, label: Titolo della pagina, type: string }
+          - { name: sottotitolo, label: Sottotitolo, type: string }
+          - name: blocchi
+            label: Contenuto (aggiungi blocchi)
+            type: block
+            list: true
+            blockKey: tipo
+            blocks:
+              - name: testo
+                label: Testo
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: testo, label: Testo, type: rich-text, options: { format: html } }
+              - name: immagine
+                label: Immagine
+                fields:
+                  - { name: immagine, label: Immagine, type: image, options: { media: immagini } }
+                  - { name: didascalia, label: Didascalia, type: string }
+              - name: citazione
+                label: Citazione
+                fields:
+                  - { name: testo, label: Citazione, type: text }
+                  - { name: autore, label: Autore, type: string }
+              - name: elenco
+                label: Elenco puntato
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: voci, label: Voci, type: string, list: true }
+              - name: pulsante
+                label: Pulsante
+                fields:
+                  - { name: etichetta, label: Scritta sul pulsante, type: string }
+                  - { name: link, label: "Link (es. #manifesto oppure https://...)", type: string }
+              - name: video
+                label: Video YouTube
+                fields:
+                  - { name: link, label: Link del video YouTube, type: string }
+              - name: file
+                label: File da scaricare
+                fields:
+                  - { name: etichetta, label: Nome del file, type: string }
+                  - { name: file, label: File, type: file, options: { media: documenti } }
+      - name: de
+        label: "Contenuto in Deutsch (se vuoto si vede l'italiano)"
+        type: object
+        fields:
+          - { name: titolo, label: Titolo della pagina, type: string }
+          - { name: sottotitolo, label: Sottotitolo, type: string }
+          - name: blocchi
+            label: Contenuto (aggiungi blocchi)
+            type: block
+            list: true
+            blockKey: tipo
+            blocks:
+              - name: testo
+                label: Testo
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: testo, label: Testo, type: rich-text, options: { format: html } }
+              - name: immagine
+                label: Immagine
+                fields:
+                  - { name: immagine, label: Immagine, type: image, options: { media: immagini } }
+                  - { name: didascalia, label: Didascalia, type: string }
+              - name: citazione
+                label: Citazione
+                fields:
+                  - { name: testo, label: Citazione, type: text }
+                  - { name: autore, label: Autore, type: string }
+              - name: elenco
+                label: Elenco puntato
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: voci, label: Voci, type: string, list: true }
+              - name: pulsante
+                label: Pulsante
+                fields:
+                  - { name: etichetta, label: Scritta sul pulsante, type: string }
+                  - { name: link, label: "Link (es. #manifesto oppure https://...)", type: string }
+              - name: video
+                label: Video YouTube
+                fields:
+                  - { name: link, label: Link del video YouTube, type: string }
+              - name: file
+                label: File da scaricare
+                fields:
+                  - { name: etichetta, label: Nome del file, type: string }
+                  - { name: file, label: File, type: file, options: { media: documenti } }
+      - name: ru
+        label: "Contenuto in Русский (se vuoto si vede l'italiano)"
+        type: object
+        fields:
+          - { name: titolo, label: Titolo della pagina, type: string }
+          - { name: sottotitolo, label: Sottotitolo, type: string }
+          - name: blocchi
+            label: Contenuto (aggiungi blocchi)
+            type: block
+            list: true
+            blockKey: tipo
+            blocks:
+              - name: testo
+                label: Testo
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: testo, label: Testo, type: rich-text, options: { format: html } }
+              - name: immagine
+                label: Immagine
+                fields:
+                  - { name: immagine, label: Immagine, type: image, options: { media: immagini } }
+                  - { name: didascalia, label: Didascalia, type: string }
+              - name: citazione
+                label: Citazione
+                fields:
+                  - { name: testo, label: Citazione, type: text }
+                  - { name: autore, label: Autore, type: string }
+              - name: elenco
+                label: Elenco puntato
+                fields:
+                  - { name: titolo, label: Titolo (facoltativo), type: string }
+                  - { name: voci, label: Voci, type: string, list: true }
+              - name: pulsante
+                label: Pulsante
+                fields:
+                  - { name: etichetta, label: Scritta sul pulsante, type: string }
+                  - { name: link, label: "Link (es. #manifesto oppure https://...)", type: string }
+              - name: video
+                label: Video YouTube
+                fields:
+                  - { name: link, label: Link del video YouTube, type: string }
+              - name: file
+                label: File da scaricare
+                fields:
+                  - { name: etichetta, label: Nome del file, type: string }
+                  - { name: file, label: File, type: file, options: { media: documenti } }
   - name: testi-generali
     label: "📝 Menu, titoli e piè di pagina"
     type: file
