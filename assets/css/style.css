@@ -522,3 +522,7 @@ select option, select optgroup { background-color: var(--bg2, #241538); color: v
 @media (max-width: 680px) { .paper-latest { grid-template-columns: 1fr; } .paper-cover { max-width: 360px; margin: 0 auto; } }
 
 #page-giornale .page-hero .kicker { margin: 0 0 16px; }
+
+/* Discord */
+.chat-art { width: 76px; height: 76px; border-radius: 50%; background: var(--grad); display: grid; place-items: center; font-size: 2rem; flex: none; box-shadow: var(--shadow); }
+.discord-banner .doc-copy { flex: 1 1 240px; }

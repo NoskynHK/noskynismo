@@ -2392,6 +2392,36 @@ content:
           - { name: en, label: English, type: text }
           - { name: de, label: Deutsch, type: text }
           - { name: ru, label: Русский, type: text }
+  - name: testi-discord
+    label: "📝 Server Discord (scritte)"
+    type: file
+    path: content/testi-discord.json
+    format: json
+    fields:
+      - name: d_t
+        label: "Entra nel server Discord"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: d_d
+        label: "Il Noskynismo ha anche una community: chiacchiera con gli altri, prop…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: d_btn
+        label: "Unisciti al Discord"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
   - name: testi-giornale
     label: "📝 Pagina Giornale (titoli e scritte)"
     type: file
