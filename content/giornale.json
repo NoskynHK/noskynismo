@@ -1,5 +1,10 @@
 [
   {
+    "numero": "prova",
+    "data": "2026-11-10",
+    "pdf": "/assets/docs/giornale-2026-11-09.pdf"
+  },
+  {
     "numero": "1",
     "etichetta": "Edizione straordinaria",
     "data": "2026-11-09",
