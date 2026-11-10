@@ -1,0 +1,62 @@
+{
+  "g_kicker": {
+    "it": "Organo di Informazione e Cronaca",
+    "en": "Organ of Information and Reporting",
+    "de": "Organ für Information und Berichterstattung",
+    "ru": "Орган информации и хроники"
+  },
+  "g_title": {
+    "it": "La Voce di LeviNosk",
+    "en": "The Voice of LeviNosk",
+    "de": "Die Stimme von LeviNosk",
+    "ru": "Голос ЛевиНоска"
+  },
+  "g_sub": {
+    "it": "Il giornale del Noskynismo: ogni settimana esce un nuovo numero. Qui trovi anche tutti quelli passati.",
+    "en": "The newspaper of Noskynismo: a new issue comes out every week. All the past issues are here too.",
+    "de": "Die Zeitung des Noskynismo: jede Woche erscheint eine neue Ausgabe. Hier findest du auch alle früheren.",
+    "ru": "Газета носкинизма: каждую неделю выходит новый номер. Здесь же все прошлые выпуски."
+  },
+  "g_latest": {
+    "it": "Ultimo numero",
+    "en": "Latest issue",
+    "de": "Neueste Ausgabe",
+    "ru": "Последний номер"
+  },
+  "g_archive": {
+    "it": "Archivio",
+    "en": "Archive",
+    "de": "Archiv",
+    "ru": "Архив"
+  },
+  "g_read": {
+    "it": "Leggi",
+    "en": "Read",
+    "de": "Lesen",
+    "ru": "Читать"
+  },
+  "g_download": {
+    "it": "Scarica il PDF",
+    "en": "Download the PDF",
+    "de": "PDF herunterladen",
+    "ru": "Скачать PDF"
+  },
+  "g_issue": {
+    "it": "N°",
+    "en": "No.",
+    "de": "Nr.",
+    "ru": "№"
+  },
+  "g_empty": {
+    "it": "Il primo numero uscirà presto.",
+    "en": "The first issue is coming soon.",
+    "de": "Die erste Ausgabe erscheint bald.",
+    "ru": "Первый номер скоро выйдет."
+  },
+  "g_noarch": {
+    "it": "I numeri precedenti appariranno qui, uno per ogni settimana.",
+    "en": "Previous issues will appear here, one for each week.",
+    "de": "Frühere Ausgaben erscheinen hier, eine pro Woche.",
+    "ru": "Предыдущие номера появятся здесь — по одному на каждую неделю."
+  }
+}

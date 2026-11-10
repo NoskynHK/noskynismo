@@ -206,6 +206,20 @@ content:
                 fields:
                   - { name: etichetta, label: Nome del file, type: string }
                   - { name: file, label: File, type: file, options: { media: documenti } }
+  - name: giornale
+    label: "📰 Giornale (aggiungi un numero ogni settimana)"
+    type: file
+    path: content/giornale.json
+    format: json
+    list: true
+    fields:
+      - { name: numero, label: "Numero (es. 2)", type: string }
+      - { name: etichetta, label: "Etichetta (es. Edizione straordinaria, facoltativa)", type: string }
+      - { name: data, label: Data di uscita, type: date }
+      - { name: titolo, label: Titolo del numero (facoltativo), type: string }
+      - { name: riassunto, label: Riassunto in 1-2 righe (facoltativo), type: text }
+      - { name: copertina, label: "Copertina (immagine della prima pagina, facoltativa)", type: image, options: { media: immagini } }
+      - { name: pdf, label: File del giornale (PDF), type: file, options: { media: documenti } }
   - name: testi-generali
     label: "📝 Menu, titoli e piè di pagina"
     type: file
@@ -422,6 +436,22 @@ content:
           - { name: ru, label: Русский, type: text }
       - name: title_verify
         label: "Verifica tessera — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: nav_paper
+        label: "Giornale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: title_paper
+        label: "Il Giornale — Il Noskynismo"
         type: object
         fields:
           - { name: it, label: Italiano, type: text }
@@ -2356,6 +2386,92 @@ content:
           - { name: ru, label: Русский, type: text }
       - name: v_note
         label: "La verifica controlla che il codice sia stato generato da questo sito…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-giornale
+    label: "📝 Pagina Giornale (titoli e scritte)"
+    type: file
+    path: content/testi-giornale.json
+    format: json
+    fields:
+      - name: g_kicker
+        label: "Organo di Informazione e Cronaca"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_title
+        label: "La Voce di LeviNosk"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_sub
+        label: "Il giornale del Noskynismo: ogni settimana esce un nuovo numero. Qui …"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_latest
+        label: "Ultimo numero"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_archive
+        label: "Archivio"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_read
+        label: "Leggi"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_download
+        label: "Scarica il PDF"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_issue
+        label: "N°"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_empty
+        label: "Il primo numero uscirà presto."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: g_noarch
+        label: "I numeri precedenti appariranno qui, uno per ogni settimana."
         type: object
         fields:
           - { name: it, label: Italiano, type: text }

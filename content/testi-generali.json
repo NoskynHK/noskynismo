@@ -161,6 +161,18 @@
     "de": "Karte prüfen — Noskynismo",
     "ru": "Проверка билета — Носкинизм"
   },
+  "nav_paper": {
+    "it": "Giornale",
+    "en": "Newspaper",
+    "de": "Zeitung",
+    "ru": "Газета"
+  },
+  "title_paper": {
+    "it": "Il Giornale — Il Noskynismo",
+    "en": "The Newspaper — Noskynismo",
+    "de": "Die Zeitung — Der Noskynismo",
+    "ru": "Газета — Носкинизм"
+  },
   "f_text": {
     "it": "<strong>Il Noskynismo</strong> — un'idea di NoskynHK &amp; Sig.Lev. Un progetto scolastico, completo.",
     "en": "<strong>Noskynismo</strong> — an idea by NoskynHK &amp; Sig.Lev. A school project, complete.",

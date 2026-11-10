@@ -3,8 +3,8 @@
   'use strict';
 
   var D = window.NSK_I18N || {};
-  var PAGES = ['home', 'manifesto', 'diritti', 'economia', 'cultura', 'inno', 'tessera', 'partecipa', 'verifica', 'pagina'];
-  var TITLE_KEY = { home: 'title.home', manifesto: 'title.manifesto', diritti: 'title.rights', economia: 'title.economy', cultura: 'title.culture', inno: 'title.anthem', tessera: 'title.card', partecipa: 'title.join', verifica: 'title.verify' };
+  var PAGES = ['home', 'manifesto', 'diritti', 'economia', 'cultura', 'inno', 'tessera', 'partecipa', 'verifica', 'giornale', 'pagina'];
+  var TITLE_KEY = { home: 'title.home', manifesto: 'title.manifesto', diritti: 'title.rights', economia: 'title.economy', cultura: 'title.culture', inno: 'title.anthem', tessera: 'title.card', partecipa: 'title.join', verifica: 'title.verify', giornale: 'title.paper' };
   var WORDMARK = { it: 'Il <em>Noskynismo</em>', en: 'The <em>Noskynismo</em>', de: 'Der <em>Noskynismo</em>', ru: '<em>Носкинизм</em>' };
   var CODE_HASH = 3714687719143868; // cyrb53 del codice segreto
   var conn = navigator.connection || {};
@@ -57,6 +57,7 @@
     updatePlayLabel();
     if (cardReady) drawCard();
     if (cvInit) convRender();
+    if (paperIssues && currentPage() === 'giornale') renderPaper();
     if (dynPages) { addDynNav(); if (currentPage() === 'pagina') renderDyn(); }
     if (window.NSK_LYRICS) renderLyrics();
     if (verifyInit && currentPage() === 'verifica') renderVerify();
@@ -64,7 +65,7 @@
 
 
   /* ---------------- contenuti modificabili dal CMS ---------------- */
-  var dynPages = null;
+  var dynPages = null, paperIssues = null;
   function pageTitle(page) {
     if (page === 'pagina') { var p = findDyn(); var tt = p ? pv(p).titolo : ''; return (tt ? tt + ' — ' : '') + 'Il Noskynismo'; }
     return t(TITLE_KEY[page]);
@@ -93,7 +94,11 @@
       addDynNav();
       if (currentPage() === 'pagina') { renderDyn(); document.title = pageTitle('pagina'); }
     });
-    return Promise.all([texts, pages]);
+    var paper = getJSON('content/giornale.json').then(function (p) {
+      paperIssues = Array.isArray(p) ? p.filter(function (x) { return x && (x.pdf || x.numero); }) : [];
+      if (currentPage() === 'giornale') renderPaper();
+    });
+    return Promise.all([texts, pages, paper]);
   }
   function pv(p) {
     var base = (p && p.it) || p || {}, L = (p && p[lang]) || {};
@@ -103,6 +108,43 @@
       blocchi: (L.blocchi && L.blocchi.length) ? L.blocchi : (base.blocchi || [])
     };
   }
+
+  /* ---------------- giornale ---------------- */
+  function issueDate(d, long) {
+    var m = /^(\d{4})-(\d{2})-(\d{2})/.exec(String(d || '')); if (!m) return String(d || '');
+    var dt = new Date(+m[1], +m[2] - 1, +m[3]);
+    try { return dt.toLocaleDateString(lang, long ? { weekday: 'long', day: 'numeric', month: 'long', year: 'numeric' } : { day: 'numeric', month: 'short', year: 'numeric' }); } catch (e) { return String(d); }
+  }
+  function issueCover(it, big) {
+    if (it.copertina) return '<img src="' + esc(safeUrl(it.copertina)) + '" alt="' + esc(t('g.title') + ' ' + t('g.issue') + (it.numero || '')) + '" loading="' + (big ? 'eager' : 'lazy') + '" decoding="async">';
+    return '<span class="paper-ph"><b>' + esc(t('g.issue') + (it.numero || '')) + '</b><i>' + esc(t('g.title')) + '</i></span>';
+  }
+  function issueBtns(it) {
+    if (!it.pdf) return '';
+    var u = esc(safeUrl(it.pdf));
+    return '<a class="btn btn-primary" href="' + u + '" target="_blank" rel="noopener">' + esc(t('g.read')) + '</a> <a class="btn" href="' + u + '" download>⬇ ' + esc(t('g.download')) + '</a>';
+  }
+  function renderPaper() {
+    var root = $('#paper-root'); if (!root) return;
+    if (!paperIssues) { root.innerHTML = ''; return; }
+    var list = paperIssues.slice().sort(function (a, b) { return String(b.data || '').localeCompare(String(a.data || '')) || (parseInt(b.numero, 10) || 0) - (parseInt(a.numero, 10) || 0); });
+    if (!list.length) { root.innerHTML = '<p class="paper-empty">' + esc(t('g.empty')) + '</p>'; return; }
+    var L = list[0], rest = list.slice(1);
+    var h = '<div class="section-head"><h2>' + esc(t('g.latest')) + '</h2></div>' +
+      '<article class="paper-latest glass"><a class="paper-cover" href="' + (L.pdf ? esc(safeUrl(L.pdf)) : '#giornale') + '" target="_blank" rel="noopener">' + issueCover(L, true) + '</a>' +
+      '<div class="paper-info"><p class="paper-no">' + esc(t('g.issue') + (L.numero || '')) + (L.etichetta ? ' · ' + esc(L.etichetta) : '') + '</p>' +
+      '<h3>' + esc(L.titolo || t('g.title')) + '</h3><p class="paper-date">' + esc(issueDate(L.data, true)) + '</p>' +
+      (L.riassunto ? '<p class="paper-sum">' + esc(L.riassunto) + '</p>' : '') + '<p class="paper-btns">' + issueBtns(L) + '</p></div></article>' +
+      '<div class="section-head paper-arch"><h2>' + esc(t('g.archive')) + '</h2></div>';
+    h += rest.length ? '<div class="paper-grid">' + rest.map(function (it) {
+      return '<article class="paper-card glass"><a class="paper-cover" href="' + (it.pdf ? esc(safeUrl(it.pdf)) : '#giornale') + '" target="_blank" rel="noopener">' + issueCover(it) + '</a>' +
+        '<div class="paper-cbody"><p class="paper-no">' + esc(t('g.issue') + (it.numero || '')) + (it.etichetta ? ' · ' + esc(it.etichetta) : '') + '</p>' +
+        '<p class="paper-date">' + esc(issueDate(it.data)) + '</p>' + (it.titolo ? '<h3>' + esc(it.titolo) + '</h3>' : '') +
+        (it.pdf ? '<p class="paper-btns"><a class="btn btn-sm" href="' + esc(safeUrl(it.pdf)) + '" target="_blank" rel="noopener">' + esc(t('g.read')) + '</a></p>' : '') + '</div></article>';
+    }).join('') + '</div>' : '<p class="paper-empty">' + esc(t('g.noarch')) + '</p>';
+    root.innerHTML = h;
+  }
+
   function slugOf(s) { return String(s || '').toLowerCase().trim().replace(/[^a-z0-9-]+/g, '-').replace(/^-+|-+$/g, ''); }
   function findDyn() {
     if (!dynPages) return null;
@@ -195,6 +237,7 @@
     $$('.links a').forEach(function (a) { a.classList.toggle('active', a.getAttribute('data-page') === page); });
     document.title = pageTitle(page);
     if (page === 'pagina') renderDyn();
+    if (page === 'giornale') renderPaper();
     $$('.links a[data-dyn]').forEach(function (a) { a.classList.toggle('active', page === 'pagina' && a.getAttribute('href') === location.hash); });
     $('#nav').classList.remove('open');
     $('#menu-btn').setAttribute('aria-expanded', 'false');
