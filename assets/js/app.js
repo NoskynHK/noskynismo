@@ -537,14 +537,34 @@
 
     $('#tess-unlock').addEventListener('click', tryUnlock);
     $('#tess-code').addEventListener('keydown', function (e) { if (e.key === 'Enter') { e.preventDefault(); tryUnlock(); } });
+    var MAX_TRIES = 3, LOCK_SEC = 30, fails = 0, lockTimer = 0;
+    function lockLeft() { var u = parseInt(store.get('nsk-lock-until'), 10) || 0; return Math.max(0, Math.ceil((u - Date.now()) / 1000)); }
+    function setLocked(on) { $('#tess-code').disabled = on; $('#tess-unlock').disabled = on; }
+    function lockTick() {
+      var left = lockLeft(), st = $('#code-status');
+      if (left <= 0) {
+        clearInterval(lockTimer); lockTimer = 0; fails = 0; store.set('nsk-lock-until', '0'); setLocked(false);
+        st.className = 'tess-status'; st.textContent = ''; return;
+      }
+      setLocked(true); st.className = 'tess-status err'; st.textContent = t('k.code.wait').replace('{n}', left);
+    }
+    function startLock() {
+      store.set('nsk-lock-until', String(Date.now() + LOCK_SEC * 1000));
+      lockTick(); if (!lockTimer) lockTimer = setInterval(lockTick, 1000);
+    }
+    if (lockLeft() > 0) { lockTick(); lockTimer = setInterval(lockTick, 1000); }
     function tryUnlock() {
       var v = $('#tess-code').value.trim(), st = $('#code-status');
-      if (!v) return;
+      if (!v || lockLeft() > 0) return;
       if (cyrb53(v) === CODE_HASH) {
-        unlocked = true; store.set('nsk-unlocked', '1');
+        fails = 0; unlocked = true; store.set('nsk-unlocked', '1');
         showUnlocked(); st.className = 'tess-status'; st.textContent = t('k.code.ok');
         $('#tess-custom').focus();
-      } else { st.className = 'tess-status err'; st.textContent = t('k.code.bad'); }
+      } else {
+        fails++; $('#tess-code').value = '';
+        if (fails >= MAX_TRIES) startLock();
+        else { st.className = 'tess-status err'; st.textContent = t('k.code.bad') + ' (' + fails + '/' + MAX_TRIES + ')'; }
+      }
     }
     function showUnlocked() { $('#custom-wrap').hidden = false; $('#tess-code').value = ''; }
     if (store.get('nsk-unlocked') === '1') { unlocked = true; showUnlocked(); }
