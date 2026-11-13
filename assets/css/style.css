@@ -526,3 +526,21 @@ select option, select optgroup { background-color: var(--bg2, #241538); color: v
 /* Discord */
 .chat-art { width: 76px; height: 76px; border-radius: 50%; background: var(--grad); display: grid; place-items: center; font-size: 2rem; flex: none; box-shadow: var(--shadow); }
 .discord-banner .doc-copy { flex: 1 1 240px; }
+
+/* pagina LGBTQIA+ */
+.guide-banner { gap: clamp(20px, 3vw, 36px); }
+.guide-cover { width: clamp(120px, 18vw, 170px); height: auto; border-radius: 10px; border: 1px solid var(--stroke); box-shadow: var(--shadow); flex: none; }
+.guide-banner .doc-copy { flex: 1 1 260px; display: grid; gap: 10px; justify-items: start; }
+.guide-banner .doc-copy h2, .guide-banner .doc-copy p { margin: 0; }
+.guide-note { color: var(--muted); font-size: .85rem; }
+.lg-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+.lg-card { padding: 26px 24px; }
+.lg-card h3 { font-size: 1.55rem; }
+.lg-letter { width: 52px; height: 52px; border-radius: 16px; background: var(--grad); color: var(--on-accent); font-weight: 800; font-size: 1.5rem; display: grid; place-items: center; margin-bottom: 14px; }
+.lg-two { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+.lg-box { padding: clamp(22px, 3vw, 34px); }
+.lg-box h2 { font-family: var(--serif); font-weight: 400; font-size: 2rem; margin: 0 0 12px; }
+.lg-box p, .lg-box li { color: var(--muted); line-height: 1.65; }
+.lg-box strong { color: var(--ink); }
+.lg-box ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
+@media (max-width: 860px) { .lg-two { grid-template-columns: 1fr; } }

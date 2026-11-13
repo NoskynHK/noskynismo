@@ -3,8 +3,8 @@
   'use strict';
 
   var D = window.NSK_I18N || {};
-  var PAGES = ['home', 'manifesto', 'diritti', 'economia', 'cultura', 'inno', 'tessera', 'partecipa', 'verifica', 'giornale', 'pagina'];
-  var TITLE_KEY = { home: 'title.home', manifesto: 'title.manifesto', diritti: 'title.rights', economia: 'title.economy', cultura: 'title.culture', inno: 'title.anthem', tessera: 'title.card', partecipa: 'title.join', verifica: 'title.verify', giornale: 'title.paper' };
+  var PAGES = ['home', 'manifesto', 'diritti', 'economia', 'cultura', 'inno', 'tessera', 'partecipa', 'verifica', 'giornale', 'lgbtqia', 'pagina'];
+  var TITLE_KEY = { home: 'title.home', manifesto: 'title.manifesto', diritti: 'title.rights', economia: 'title.economy', cultura: 'title.culture', inno: 'title.anthem', tessera: 'title.card', partecipa: 'title.join', verifica: 'title.verify', giornale: 'title.paper', lgbtqia: 'lg.tb' };
   var WORDMARK = { it: 'Il <em>Noskynismo</em>', en: 'The <em>Noskynismo</em>', de: 'Der <em>Noskynismo</em>', ru: '<em>Носкинизм</em>' };
   var CODE_HASH = 3714687719143868; // cyrb53 del codice segreto
   var conn = navigator.connection || {};

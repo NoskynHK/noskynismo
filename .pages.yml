@@ -2132,6 +2132,14 @@ content:
           - { name: en, label: English, type: text }
           - { name: de, label: Deutsch, type: text }
           - { name: ru, label: Русский, type: text }
+      - name: k_code_wait
+        label: "Troppi tentativi. Riprova tra {n} secondi."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
   - name: testi-partecipa
     label: "📝 Pagina Partecipa"
     type: file
@@ -2386,6 +2394,348 @@ content:
           - { name: ru, label: Русский, type: text }
       - name: v_note
         label: "La verifica controlla che il codice sia stato generato da questo sito…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+  - name: testi-lgbtqia
+    label: "📝 Pagina LGBTQIA+"
+    type: file
+    path: content/testi-lgbtqia.json
+    format: json
+    fields:
+      - name: lg_nav
+        label: "LGBTQIA+"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_tb
+        label: "LGBTQIA+ — Il Noskynismo"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_kicker
+        label: "Rispetto · Identità · Amore"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_title
+        label: "LGBTQIA+"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_sub
+        label: "Una pagina semplice per capire le parole, le identità e il rispetto p…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_g_t
+        label: "Guida all'universo LGBTQIA+"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_g_d
+        label: "22 pagine per capire orientamenti e identità, le loro bandiere, i dir…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_g_note
+        label: "PDF · in italiano"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_g_btn
+        label: "Scarica la guida (PDF)"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_g_read
+        label: "Leggi online"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_s_t
+        label: "Cosa significa la sigla"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_s_d
+        label: "Ogni lettera rappresenta un gruppo di persone. La sigla cambia da luo…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l1_t
+        label: "Lesbica"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l1_d
+        label: "Donne attratte da altre donne."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l2_t
+        label: "Gay"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l2_d
+        label: "Uomini attratti da altri uomini."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l3_t
+        label: "Bisessuale"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l3_d
+        label: "Attrazione verso più di un genere."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l4_t
+        label: "Transgender"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l4_d
+        label: "Identità di genere diversa da quella assegnata alla nascita."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l5_t
+        label: "Queer / Questioning"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l5_d
+        label: "Chi non rientra nelle etichette tradizionali, o si sta ancora chieden…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l6_t
+        label: "Intersex"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l6_d
+        label: "Persone nate con caratteristiche sessuali che non rientrano nelle def…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l7_t
+        label: "Asessuale, aromantico, agender"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l7_d
+        label: "Poca o nessuna attrazione sessuale o romantica, oppure nessun genere."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l8_t
+        label: "Tutto il resto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_l8_d
+        label: "Pansessuali, non binarie, genderfluid e tante altre identità."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c_t
+        label: "Quattro cose da non confondere"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c_d
+        label: "Sono quattro aspetti indipendenti: puoi combinarli in qualsiasi modo."
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c1_t
+        label: "Sesso assegnato alla nascita"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c1_d
+        label: "Quello che viene scritto sui documenti alla nascita, in base alle car…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c2_t
+        label: "Identità di genere"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c2_d
+        label: "Come ti senti dentro: uomo, donna, entrambi, nessuno dei due, qualcos…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c3_t
+        label: "Espressione di genere"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c3_d
+        label: "Come ti presenti fuori: vestiti, look, voce. Non dice nulla di sicuro…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c4_t
+        label: "Orientamento"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_c4_d
+        label: "Verso chi provi attrazione sessuale e/o romantica. Può essere anche p…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_r_t
+        label: "Come comportarsi con rispetto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_r_d
+        label: "Chiama le persone con il nome e i pronomi che scelgono.Non fare suppo…"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_h_t
+        label: "Dove trovare aiuto"
+        type: object
+        fields:
+          - { name: it, label: Italiano, type: text }
+          - { name: en, label: English, type: text }
+          - { name: de, label: Deutsch, type: text }
+          - { name: ru, label: Русский, type: text }
+      - name: lg_h_d
+        label: "Se hai dubbi, ti senti solo o qualcuno ti tratta male per chi sei: no…"
         type: object
         fields:
           - { name: it, label: Italiano, type: text }

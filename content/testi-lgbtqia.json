@@ -1,0 +1,254 @@
+{
+  "lg_nav": {
+    "it": "LGBTQIA+",
+    "en": "LGBTQIA+",
+    "de": "LGBTQIA+",
+    "ru": "ЛГБТКИА+"
+  },
+  "lg_tb": {
+    "it": "LGBTQIA+ — Il Noskynismo",
+    "en": "LGBTQIA+ — Noskynismo",
+    "de": "LGBTQIA+ — Der Noskynismus",
+    "ru": "ЛГБТКИА+ — Носкинизм"
+  },
+  "lg_kicker": {
+    "it": "Rispetto · Identità · Amore",
+    "en": "Respect · Identity · Love",
+    "de": "Respekt · Identität · Liebe",
+    "ru": "Уважение · Идентичность · Любовь"
+  },
+  "lg_title": {
+    "it": "LGBTQIA+",
+    "en": "LGBTQIA+",
+    "de": "LGBTQIA+",
+    "ru": "ЛГБТКИА+"
+  },
+  "lg_sub": {
+    "it": "Una pagina semplice per capire le parole, le identità e il rispetto per tutte le persone. Ognuno deve poter essere se stesso senza paura di essere giudicato.",
+    "en": "A simple page to understand the words, the identities and respect for everyone. Everyone should be able to be themselves without fear of being judged.",
+    "de": "Eine einfache Seite, um Begriffe, Identitäten und Respekt für alle Menschen zu verstehen. Jeder soll er selbst sein können, ohne Angst, verurteilt zu werden.",
+    "ru": "Простая страница о терминах, идентичностях и уважении ко всем людям. Каждый должен иметь возможность быть собой, не боясь осуждения."
+  },
+  "lg_g_t": {
+    "it": "Guida all'universo LGBTQIA+",
+    "en": "Guide to the LGBTQIA+ universe",
+    "de": "Leitfaden zum LGBTQIA+-Universum",
+    "ru": "Руководство по миру ЛГБТКИА+"
+  },
+  "lg_g_d": {
+    "it": "22 pagine per capire orientamenti e identità, le loro bandiere, i diritti in Italia, come essere un buon alleato e dove trovare aiuto. Una guida, non un test: nessuno può dirti chi sei.",
+    "en": "22 pages on orientations and identities, their flags, rights in Italy, how to be a good ally and where to find help. A guide, not a test: nobody can tell you who you are.",
+    "de": "22 Seiten über Orientierungen und Identitäten, ihre Flaggen, die Rechte in Italien, wie man ein guter Verbündeter ist und wo man Hilfe findet. Ein Leitfaden, kein Test: Niemand kann dir sagen, wer du bist.",
+    "ru": "22 страницы об ориентациях и идентичностях, их флагах, правах в Италии, о том, как быть хорошим союзником, и где искать помощь. Руководство, а не тест: никто не может сказать тебе, кто ты."
+  },
+  "lg_g_note": {
+    "it": "PDF · in italiano",
+    "en": "PDF · in Italian",
+    "de": "PDF · auf Italienisch",
+    "ru": "PDF · на итальянском языке"
+  },
+  "lg_g_btn": {
+    "it": "Scarica la guida (PDF)",
+    "en": "Download the guide (PDF)",
+    "de": "Leitfaden herunterladen (PDF)",
+    "ru": "Скачать руководство (PDF)"
+  },
+  "lg_g_read": {
+    "it": "Leggi online",
+    "en": "Read online",
+    "de": "Online lesen",
+    "ru": "Читать онлайн"
+  },
+  "lg_s_t": {
+    "it": "Cosa significa la sigla",
+    "en": "What the letters mean",
+    "de": "Was die Buchstaben bedeuten",
+    "ru": "Что означают буквы"
+  },
+  "lg_s_d": {
+    "it": "Ogni lettera rappresenta un gruppo di persone. La sigla cambia da luogo a luogo: non è una gara a chi ha più lettere, serve a ricordare che c'è spazio per tante persone diverse.",
+    "en": "Each letter stands for a group of people. The acronym changes from place to place: it is not a contest for the most letters, it is a reminder that there is room for many different people.",
+    "de": "Jeder Buchstabe steht für eine Gruppe von Menschen. Die Abkürzung ändert sich von Ort zu Ort: Es ist kein Wettbewerb um die meisten Buchstaben, sondern eine Erinnerung daran, dass für viele verschiedene Menschen Platz ist.",
+    "ru": "Каждая буква обозначает группу людей. Аббревиатура меняется от места к месту: это не соревнование, у кого больше букв, а напоминание о том, что есть место для очень разных людей."
+  },
+  "lg_l1_t": {
+    "it": "Lesbica",
+    "en": "Lesbian",
+    "de": "Lesbisch",
+    "ru": "Лесбиянки"
+  },
+  "lg_l1_d": {
+    "it": "Donne attratte da altre donne.",
+    "en": "Women attracted to other women.",
+    "de": "Frauen, die sich zu Frauen hingezogen fühlen.",
+    "ru": "Женщины, которых привлекают другие женщины."
+  },
+  "lg_l2_t": {
+    "it": "Gay",
+    "en": "Gay",
+    "de": "Schwul (Gay)",
+    "ru": "Геи"
+  },
+  "lg_l2_d": {
+    "it": "Uomini attratti da altri uomini.",
+    "en": "Men attracted to other men.",
+    "de": "Männer, die sich zu Männern hingezogen fühlen.",
+    "ru": "Мужчины, которых привлекают другие мужчины."
+  },
+  "lg_l3_t": {
+    "it": "Bisessuale",
+    "en": "Bisexual",
+    "de": "Bisexuell",
+    "ru": "Бисексуалы"
+  },
+  "lg_l3_d": {
+    "it": "Attrazione verso più di un genere.",
+    "en": "Attraction to more than one gender.",
+    "de": "Anziehung zu mehr als einem Geschlecht.",
+    "ru": "Влечение к более чем одному полу или гендеру."
+  },
+  "lg_l4_t": {
+    "it": "Transgender",
+    "en": "Transgender",
+    "de": "Transgender",
+    "ru": "Трансгендерные люди"
+  },
+  "lg_l4_d": {
+    "it": "Identità di genere diversa da quella assegnata alla nascita.",
+    "en": "A gender identity different from the one assigned at birth.",
+    "de": "Eine Geschlechtsidentität, die sich von der bei der Geburt zugewiesenen unterscheidet.",
+    "ru": "Гендерная идентичность отличается от записанной при рождении."
+  },
+  "lg_l5_t": {
+    "it": "Queer / Questioning",
+    "en": "Queer / Questioning",
+    "de": "Queer / Questioning",
+    "ru": "Квир / «квестчининг»"
+  },
+  "lg_l5_d": {
+    "it": "Chi non rientra nelle etichette tradizionali, o si sta ancora chiedendo chi è.",
+    "en": "People outside traditional labels, or still figuring out who they are.",
+    "de": "Menschen außerhalb traditioneller Kategorien oder auf der Suche nach sich selbst.",
+    "ru": "Те, кто не вписывается в привычные ярлыки или ещё разбирается, кто они."
+  },
+  "lg_l6_t": {
+    "it": "Intersex",
+    "en": "Intersex",
+    "de": "Intergeschlechtlich",
+    "ru": "Интерсекс"
+  },
+  "lg_l6_d": {
+    "it": "Persone nate con caratteristiche sessuali che non rientrano nelle definizioni tipiche di maschio o femmina.",
+    "en": "People born with sex characteristics that do not fit typical definitions of male or female.",
+    "de": "Menschen mit Geschlechtsmerkmalen, die nicht den typischen Definitionen von männlich oder weiblich entsprechen.",
+    "ru": "Люди, рождённые с половыми признаками, не укладывающимися в типичные определения мужского или женского."
+  },
+  "lg_l7_t": {
+    "it": "Asessuale, aromantico, agender",
+    "en": "Asexual, aromantic, agender",
+    "de": "Asexuell, aromantisch, agender",
+    "ru": "Асексуальные, аромантичные, агендерные"
+  },
+  "lg_l7_d": {
+    "it": "Poca o nessuna attrazione sessuale o romantica, oppure nessun genere.",
+    "en": "Little or no sexual or romantic attraction, or no gender.",
+    "de": "Wenig oder keine sexuelle oder romantische Anziehung, oder kein Geschlecht.",
+    "ru": "Мало или совсем нет сексуального или романтического влечения либо нет гендера."
+  },
+  "lg_l8_t": {
+    "it": "Tutto il resto",
+    "en": "Everything else",
+    "de": "Alles andere",
+    "ru": "Всё остальное"
+  },
+  "lg_l8_d": {
+    "it": "Pansessuali, non binarie, genderfluid e tante altre identità.",
+    "en": "Pansexual, non-binary, genderfluid and many more identities.",
+    "de": "Pansexuelle, nicht-binäre, genderfluide und viele weitere Identitäten.",
+    "ru": "Пансексуальные, небинарные, гендерфлюидные и многие другие идентичности."
+  },
+  "lg_c_t": {
+    "it": "Quattro cose da non confondere",
+    "en": "Four things not to confuse",
+    "de": "Vier Begriffe, die man nicht verwechseln sollte",
+    "ru": "Четыре понятия, которые нельзя путать"
+  },
+  "lg_c_d": {
+    "it": "Sono quattro aspetti indipendenti: puoi combinarli in qualsiasi modo.",
+    "en": "They are four independent aspects: you can combine them in any way.",
+    "de": "Es sind vier voneinander unabhängige Aspekte: Du kannst sie beliebig kombinieren.",
+    "ru": "Это четыре независимых аспекта: их можно сочетать как угодно."
+  },
+  "lg_c1_t": {
+    "it": "Sesso assegnato alla nascita",
+    "en": "Sex assigned at birth",
+    "de": "Bei der Geburt zugewiesenes Geschlecht",
+    "ru": "Пол, записанный при рождении"
+  },
+  "lg_c1_d": {
+    "it": "Quello che viene scritto sui documenti alla nascita, in base alle caratteristiche del corpo.",
+    "en": "What is written on the documents at birth, based on the body.",
+    "de": "Das, was bei der Geburt aufgrund des Körpers in die Papiere geschrieben wird.",
+    "ru": "То, что записывают в документах при рождении на основании телесных признаков."
+  },
+  "lg_c2_t": {
+    "it": "Identità di genere",
+    "en": "Gender identity",
+    "de": "Geschlechtsidentität",
+    "ru": "Гендерная идентичность"
+  },
+  "lg_c2_d": {
+    "it": "Come ti senti dentro: uomo, donna, entrambi, nessuno dei due, qualcosa di fluido.",
+    "en": "How you feel inside: man, woman, both, neither, something fluid.",
+    "de": "Wie du dich innerlich fühlst: Mann, Frau, beides, keines von beiden, etwas Fließendes.",
+    "ru": "Как ты чувствуешь себя внутри: мужчина, женщина, оба, ни тот ни другой, нечто изменчивое."
+  },
+  "lg_c3_t": {
+    "it": "Espressione di genere",
+    "en": "Gender expression",
+    "de": "Geschlechtsausdruck",
+    "ru": "Гендерное выражение"
+  },
+  "lg_c3_d": {
+    "it": "Come ti presenti fuori: vestiti, look, voce. Non dice nulla di sicuro su identità o orientamento.",
+    "en": "How you present yourself: clothes, look, voice. It says nothing certain about identity or orientation.",
+    "de": "Wie du nach außen auftrittst: Kleidung, Look, Stimme. Es sagt nichts Sicheres über Identität oder Orientierung.",
+    "ru": "Как ты выглядишь снаружи: одежда, внешний вид, голос. Это ничего не говорит наверняка об идентичности или ориентации."
+  },
+  "lg_c4_t": {
+    "it": "Orientamento",
+    "en": "Orientation",
+    "de": "Orientierung",
+    "ru": "Ориентация"
+  },
+  "lg_c4_d": {
+    "it": "Verso chi provi attrazione sessuale e/o romantica. Può essere anche poca o nessuna.",
+    "en": "Who you feel sexual and/or romantic attraction to. It can also be little or none.",
+    "de": "Zu wem du sexuelle und/oder romantische Anziehung empfindest. Sie kann auch gering sein oder fehlen.",
+    "ru": "К кому ты испытываешь сексуальное и/или романтическое влечение. Оно может быть слабым или отсутствовать."
+  },
+  "lg_r_t": {
+    "it": "Come comportarsi con rispetto",
+    "en": "How to behave with respect",
+    "de": "Respektvoll miteinander umgehen",
+    "ru": "Как вести себя с уважением"
+  },
+  "lg_r_d": {
+    "it": "<ul><li>Chiama le persone con il nome e i pronomi che scelgono.</li><li>Non fare supposizioni: l'identità non si capisce da come uno appare.</li><li>Se qualcuno ti confida qualcosa, tienilo per te: spetta a lui decidere a chi dirlo.</li><li>Niente insulti e niente battute offensive, nemmeno «per scherzo».</li><li>Se sbagli, chiedi scusa e riprova: succede a tutti.</li></ul>",
+    "en": "<ul><li>Call people by the name and pronouns they choose.</li><li>Do not assume: you cannot tell someone's identity from how they look.</li><li>If someone confides in you, keep it to yourself: it is up to them who to tell.</li><li>No insults and no offensive jokes, not even “for fun”.</li><li>If you make a mistake, apologise and try again: it happens to everyone.</li></ul>",
+    "de": "<ul><li>Sprich Menschen mit dem Namen und den Pronomen an, die sie wählen.</li><li>Nimm nichts an: Identität erkennt man nicht am Aussehen.</li><li>Wenn dir jemand etwas anvertraut, behalte es für dich: Nur die Person entscheidet, wem sie es erzählt.</li><li>Keine Beleidigungen und keine verletzenden Witze, auch nicht „aus Spaß“.</li><li>Wenn du einen Fehler machst, entschuldige dich und versuche es erneut: Das passiert allen.</li></ul>",
+    "ru": "<ul><li>Обращайся к людям по имени и местоимениям, которые они выбирают.</li><li>Не делай предположений: идентичность не определить по внешности.</li><li>Если тебе доверились, не рассказывай никому: только сам человек решает, кому и когда говорить.</li><li>Никаких оскорблений и обидных шуток, даже «ради смеха».</li><li>Если ошибся, извинись и попробуй снова: так бывает со всеми.</li></ul>"
+  },
+  "lg_h_t": {
+    "it": "Dove trovare aiuto",
+    "en": "Where to find help",
+    "de": "Wo du Hilfe findest",
+    "ru": "Где найти помощь"
+  },
+  "lg_h_d": {
+    "it": "<p>Se hai dubbi, ti senti solo o qualcuno ti tratta male per chi sei: non sei sbagliato e non sei solo. Puoi parlare con una persona di fiducia, un insegnante o un consulente scolastico.</p><p>In Italia esiste il <strong>Gay Help Line</strong>, servizio gratuito e anonimo di ascolto: numero verde <strong>800 713 713</strong> (controlla sul loro sito che sia attivo e gli orari). In caso di pericolo immediato chiama il <strong>112</strong>.</p>",
+    "en": "<p>If you have doubts, feel alone or someone treats you badly for who you are: you are not wrong and you are not alone. You can talk to someone you trust, a teacher or a school counsellor.</p><p>In Italy there is the <strong>Gay Help Line</strong>, a free and anonymous listening service: toll-free number <strong>800 713 713</strong> (check on their website that it is active and the opening hours). In immediate danger call <strong>112</strong>.</p>",
+    "de": "<p>Wenn du Zweifel hast, dich allein fühlst oder jemand dich schlecht behandelt, weil du bist, wie du bist: Du bist nicht falsch und nicht allein. Sprich mit einer Vertrauensperson, einer Lehrkraft oder der Schulberatung.</p><p>In Italien gibt es die <strong>Gay Help Line</strong>, einen kostenlosen, anonymen Beratungsdienst: Rufnummer <strong>800 713 713</strong> (prüfe auf deren Website, ob er aktiv ist, und die Öffnungszeiten). Bei unmittelbarer Gefahr wähle die <strong>112</strong>.</p>",
+    "ru": "<p>Если у тебя есть сомнения, тебе одиноко или к тебе плохо относятся из-за того, кто ты есть, — ты не неправильный и ты не один. Поговори с человеком, которому доверяешь, с учителем или школьным психологом.</p><p>В Италии работает <strong>Gay Help Line</strong> — бесплатная анонимная служба поддержки: бесплатный номер <strong>800 713 713</strong> (проверь на их сайте, что служба работает, и часы приёма). При непосредственной опасности звони <strong>112</strong>.</p>"
+  }
+}
