@@ -544,3 +544,37 @@ select option, select optgroup { background-color: var(--bg2, #241538); color: v
 .lg-box strong { color: var(--ink); }
 .lg-box ul { margin: 0; padding-left: 1.2em; display: grid; gap: 6px; }
 @media (max-width: 860px) { .lg-two { grid-template-columns: 1fr; } }
+
+/* test LGBTQIA+ */
+.quiz { max-width: 760px; margin: 0 auto; padding: clamp(22px, 4vw, 40px); }
+.qz-start, .qz-end { text-align: center; display: grid; gap: 16px; justify-items: center; }
+.qz-start p { margin: 0; color: var(--muted); max-width: 52ch; line-height: 1.6; }
+.qz-big { font-size: 3rem; line-height: 1; }
+.qz-best { color: var(--mint) !important; font-weight: 700; }
+.qz-top { display: flex; justify-content: space-between; color: var(--muted); font-size: .9rem; font-weight: 700; margin-bottom: 10px; }
+.qz-sc { color: var(--pink); }
+.qz-prog { height: 8px; border-radius: 99px; background: var(--stroke); overflow: hidden; margin-bottom: 26px; }
+.qz-prog i { display: block; height: 100%; background: var(--grad); border-radius: 99px; transition: width .35s ease; }
+.qz-q { font-family: var(--serif); font-size: clamp(1.45rem, 3.4vw, 2.1rem); line-height: 1.2; margin: 0 0 24px; }
+.qz-btns { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.qz-btn { font: 800 1.05rem var(--sans); padding: 16px 12px; border-radius: 16px; border: 1.5px solid var(--stroke); background: var(--panel); color: var(--ink); cursor: pointer; transition: transform .15s, border-color .15s, background .15s; }
+.qz-btn:hover:not(:disabled) { border-color: var(--lilac); transform: translateY(-2px); }
+.qz-btn:disabled { cursor: default; }
+.qz-btn.right { border-color: var(--mint); background: rgba(105, 240, 193, .16); }
+.qz-btn.wrong { border-color: var(--pink); background: rgba(255, 134, 189, .16); }
+.qz-fb { margin: 20px 0 6px; padding: 16px 18px; border-radius: 16px; line-height: 1.6; color: var(--muted); border-left: 4px solid var(--lilac); background: var(--panel); }
+.qz-fb strong { color: var(--ink); }
+.qz-fb.ok { border-left-color: var(--mint); }
+.qz-fb.no { border-left-color: var(--pink); }
+.qz-next { margin-top: 14px; }
+.qz-ring { position: relative; width: 190px; height: 190px; }
+.qz-ring svg { width: 100%; height: 100%; }
+.qz-ring-bg { fill: none; stroke: var(--stroke); stroke-width: 10; }
+.qz-ring-fg { fill: none; stroke: url(#qzg); stroke-width: 10; stroke-linecap: round; }
+.qz-ring-n { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; font-family: var(--serif); }
+.qz-ring-n b { font-size: 3.6rem; font-weight: 400; line-height: 1; }
+.qz-ring-n span { color: var(--muted); font-size: 1.3rem; }
+.qz-end h3 { font-family: var(--serif); font-weight: 400; font-size: 1.8rem; margin: 4px 0 0; }
+.qz-msg { margin: 0; color: var(--muted); max-width: 46ch; line-height: 1.6; }
+.qz-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px; }
+@media (max-width: 520px) { .qz-btns { grid-template-columns: 1fr; } }

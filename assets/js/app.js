@@ -57,6 +57,7 @@
     updatePlayLabel();
     if (cardReady) drawCard();
     if (cvInit) convRender();
+    if (qzInit) renderQuiz();
     if (paperIssues && currentPage() === 'giornale') renderPaper();
     if (dynPages) { addDynNav(); if (currentPage() === 'pagina') renderDyn(); }
     if (window.NSK_LYRICS) renderLyrics();
@@ -992,6 +993,159 @@
   var buf = [], KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'].join('|'), WORD = 's|v|o|b|o|d|a';
 
   /* ---------------- boot ---------------- */
+  /* ---------------- test LGBTQIA+ (30 vero/falso) ---------------- */
+  var qzInit = false, QN = 30;
+  var qz = { phase: 'start', order: [], i: 0, score: 0, picked: null };
+  function qfmt(s, o) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return o[k] != null ? o[k] : m; }); }
+  function qzItems() { var Q = window.NSK_QUIZ; return Q ? (Q[lang] || Q.it) : null; }
+  function qzShuffle(n) {
+    var a = [], i, j, x;
+    for (i = 0; i < n; i++) a.push(i);
+    for (i = n - 1; i > 0; i--) { j = Math.floor(Math.random() * (i + 1)); x = a[i]; a[i] = a[j]; a[j] = x; }
+    return a;
+  }
+  function qzMsg(score) { return t(score >= 27 ? 'lq.r1' : score >= 21 ? 'lq.r2' : score >= 13 ? 'lq.r3' : 'lq.r4'); }
+  function qzShareUrl() {
+    return (location.origin && location.origin !== 'null' ? location.origin + location.pathname : location.href.split('#')[0]) + '#lgbtqia';
+  }
+  function initQuiz() {
+    var box = $('#qz'); if (!box) return;
+    qzInit = true;
+    box.addEventListener('click', function (e) {
+      var b = e.target.closest ? e.target.closest('[data-qz]') : null; if (!b || b.disabled) return;
+      var a = b.getAttribute('data-qz');
+      if (a === 'go') qzStart();
+      else if (a === 'yes' || a === 'no') qzAnswer(a === 'yes');
+      else if (a === 'next') qzNext();
+      else if (a === 'save') qzSave();
+      else if (a === 'share') qzShare();
+    });
+    renderQuiz();
+  }
+  function qzStart() {
+    var go = function () {
+      if (!window.NSK_QUIZ) { toast(t('lq.err')); return; }
+      qz = { phase: 'play', order: qzShuffle(QN), i: 0, score: 0, picked: null };
+      renderQuiz(true);
+    };
+    if (window.NSK_QUIZ) go(); else loadScript('assets/js/quiz.js', go);
+  }
+  function qzAnswer(v) {
+    var items = qzItems(); if (!items || qz.picked !== null) return;
+    qz.picked = v;
+    if (items[qz.order[qz.i]].a === v) qz.score++;
+    renderQuiz(true);
+  }
+  function qzNext() {
+    if (qz.picked === null) return;
+    if (qz.i >= QN - 1) {
+      qz.phase = 'end';
+      var best = parseInt(store.get('nsk-quiz-best'), 10);
+      if (isNaN(best) || qz.score > best) store.set('nsk-quiz-best', String(qz.score));
+      store.set('nsk-quiz-last', String(qz.score));
+    } else { qz.i++; qz.picked = null; }
+    renderQuiz(true);
+  }
+  function renderQuiz(focus) {
+    var box = $('#qz'); if (!box) return;
+    var h = '', items = qzItems(), foc = '';
+    if (qz.phase === 'play' && !items) { qz.phase = 'start'; }
+    if (qz.phase === 'start') {
+      var best = parseInt(store.get('nsk-quiz-best'), 10);
+      h = '<div class="qz-start"><div class="qz-big" aria-hidden="true">🏳️‍🌈</div><p>' + t('lq.intro') + '</p>' +
+        (!isNaN(best) ? '<p class="qz-best">' + qfmt(t('lq.best'), { n: best, m: QN }) + '</p>' : '') +
+        '<button class="btn btn-primary" type="button" data-qz="go">' + t('lq.start') + '</button></div>';
+      foc = '[data-qz="go"]';
+    } else if (qz.phase === 'play') {
+      var it = items[qz.order[qz.i]], done = qz.picked !== null, ok = done && it.a === qz.picked;
+      var pct = Math.round((qz.i + (done ? 1 : 0)) / QN * 100);
+      h = '<div class="qz-top"><span>' + qfmt(t('lq.q'), { n: qz.i + 1, m: QN }) + '</span><span class="qz-sc">' + qz.score + '/' + QN + '</span></div>' +
+        '<div class="qz-prog" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + pct + '"><i style="width:' + pct + '%"></i></div>' +
+        '<p class="qz-q">' + esc(it.q) + '</p><div class="qz-btns">';
+      [[true, 'yes', 'lq.true'], [false, 'no', 'lq.false']].forEach(function (o) {
+        var c = 'qz-btn';
+        if (done) { if (it.a === o[0]) c += ' right'; else if (qz.picked === o[0]) c += ' wrong'; }
+        h += '<button type="button" class="' + c + '" data-qz="' + o[1] + '"' + (done ? ' disabled' : '') + '>' + t(o[2]) + '</button>';
+      });
+      h += '</div>';
+      if (done) {
+        h += '<div class="qz-fb ' + (ok ? 'ok' : 'no') + '"><strong>' + t(ok ? 'lq.ok' : 'lq.no') + '</strong> ' +
+          (ok ? '' : t('lq.ans') + ' ' + t(it.a ? 'lq.true' : 'lq.false') + '. ') + esc(it.e) + '</div>' +
+          '<button class="btn btn-primary qz-next" type="button" data-qz="next">' + t(qz.i >= QN - 1 ? 'lq.finish' : 'lq.next') + '</button>';
+        foc = '[data-qz="next"]';
+      }
+    } else {
+      var C = 2 * Math.PI * 52, off = C * (1 - qz.score / QN);
+      h = '<div class="qz-end"><div class="qz-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="qzg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff86bd"/><stop offset=".55" stop-color="#b392ff"/><stop offset="1" stop-color="#69f0c1"/></linearGradient></defs>' +
+        '<circle cx="60" cy="60" r="52" class="qz-ring-bg"/><circle cx="60" cy="60" r="52" class="qz-ring-fg" stroke-dasharray="' + C.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 60 60)"/></svg>' +
+        '<div class="qz-ring-n"><b>' + qz.score + '</b><span>/' + QN + '</span></div></div>' +
+        '<h3>' + t('lq.score') + '</h3><p class="qz-msg">' + qzMsg(qz.score) + '</p><div class="qz-actions">' +
+        '<button class="btn btn-primary" type="button" data-qz="save">' + t('lq.save') + '</button>' +
+        '<button class="btn btn-ghost" type="button" data-qz="share">' + t('lq.share') + '</button>' +
+        '<button class="btn btn-ghost" type="button" data-qz="go">' + t('lq.again') + '</button></div></div>';
+      foc = '[data-qz="save"]';
+    }
+    box.innerHTML = h;
+    if (focus && foc) { var f = $(foc, box); if (f && f.focus) f.focus({ preventScroll: true }); }
+  }
+  /* immagine del risultato (1080×1350) */
+  function qzCanvas(cb) {
+    var W = 1080, H = 1350, c = document.createElement('canvas'); c.width = W; c.height = H;
+    var x = c.getContext('2d'), sc = qz.score, serif = "'Instrument Serif', Georgia, 'Times New Roman', serif", sans = "Manrope, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif";
+    function wrap(txt, cx, y, maxW, lh) {
+      var words = String(txt).split(' '), line = '', i, test;
+      for (i = 0; i < words.length; i++) {
+        test = line ? line + ' ' + words[i] : words[i];
+        if (x.measureText(test).width > maxW && line) { x.fillText(line, cx, y); y += lh; line = words[i]; } else line = test;
+      }
+      x.fillText(line, cx, y); return y + lh;
+    }
+    var g = x.createLinearGradient(0, 0, W, H); g.addColorStop(0, '#130d1c'); g.addColorStop(1, '#2d1a45');
+    x.fillStyle = g; x.fillRect(0, 0, W, H);
+    ['#e40303', '#ff8c00', '#ffed00', '#008026', '#004dff', '#750787'].forEach(function (col, i) { x.fillStyle = col; x.fillRect(i * W / 6, 0, W / 6 + 1, 26); x.fillRect(i * W / 6, H - 26, W / 6 + 1, 26); });
+    x.textAlign = 'center'; x.fillStyle = '#fdf7fc';
+    x.font = '400 92px ' + serif; x.fillText(t('lq.img'), W / 2, 190);
+    x.font = '700 30px ' + sans; x.fillStyle = '#c9bcd8'; x.fillText(t('lq.score').toUpperCase(), W / 2, 270);
+    var cx = W / 2, cy = 590, r = 215, a0 = -Math.PI / 2;
+    x.lineWidth = 36; x.lineCap = 'round'; x.strokeStyle = 'rgba(255,255,255,.12)'; x.beginPath(); x.arc(cx, cy, r, 0, 2 * Math.PI); x.stroke();
+    var rg = x.createLinearGradient(cx - r, cy - r, cx + r, cy + r); rg.addColorStop(0, '#ff86bd'); rg.addColorStop(.55, '#b392ff'); rg.addColorStop(1, '#69f0c1');
+    if (sc > 0) { x.strokeStyle = rg; x.beginPath(); x.arc(cx, cy, r, a0, a0 + 2 * Math.PI * sc / QN); x.stroke(); }
+    x.fillStyle = '#fdf7fc'; x.font = '400 190px ' + serif; x.fillText(String(sc), cx - 30, cy + 40);
+    var nw = x.measureText(String(sc)).width; x.font = '400 80px ' + serif; x.fillStyle = '#c9bcd8'; x.textAlign = 'left'; x.fillText('/' + QN, cx - 30 + nw / 2 + 8, cy + 40); x.textAlign = 'center';
+    x.fillStyle = '#fdf7fc'; x.font = '700 44px ' + sans; wrap(qzMsg(sc), W / 2, 960, 860, 62);
+    x.font = '700 30px ' + sans; x.fillStyle = '#ff86bd'; x.fillText('Il Noskynismo', W / 2, 1230);
+    x.font = '500 26px ' + sans; x.fillStyle = '#c9bcd8'; x.fillText(qzShareUrl().replace(/^https?:\/\//, '').replace('#lgbtqia', ''), W / 2, 1275);
+    cb(c);
+  }
+  function qzSave() {
+    qzCanvas(function (c) {
+      c.toBlob(function (b) {
+        if (!b) return;
+        var a = document.createElement('a'), u = URL.createObjectURL(b);
+        a.href = u; a.download = 'test-lgbtqia-' + qz.score + '-' + QN + '.png';
+        document.body.appendChild(a); a.click(); a.remove(); setTimeout(function () { URL.revokeObjectURL(u); }, 3000);
+        toast(t('lq.saved'));
+      }, 'image/png');
+    });
+  }
+  function qzShare() {
+    var url = qzShareUrl(), text = qfmt(t('lq.st'), { n: qz.score, m: QN });
+    function fallback() {
+      var full = text + ' ' + url;
+      if (navigator.share) { navigator.share({ text: text, url: url }).catch(function () {}); return; }
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(full).then(function () { toast(t('lq.copied')); }, function () {});
+    }
+    qzCanvas(function (c) {
+      c.toBlob(function (b) {
+        try {
+          var f = b && typeof File === 'function' ? new File([b], 'test-lgbtqia.png', { type: 'image/png' }) : null;
+          if (f && navigator.canShare && navigator.canShare({ files: [f] })) { navigator.share({ files: [f], title: t('lq.img'), text: text + ' ' + url }).catch(function () {}); return; }
+        } catch (e) { /* ignora */ }
+        fallback();
+      }, 'image/png');
+    });
+  }
+
   function boot() {
     initChrome();
     initLightbox();
@@ -1000,6 +1154,7 @@
     initPwa();
     initEgg();
     applyLang(detectLang());
+    initQuiz();
     addEventListener('hashchange', render);
     render();
     loadContent();
