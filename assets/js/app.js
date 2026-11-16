@@ -995,7 +995,7 @@
   /* ---------------- boot ---------------- */
   /* ---------------- test LGBTQIA+ (30 vero/falso) ---------------- */
   var qzInit = false, QN = 30;
-  var qz = { phase: 'start', order: [], i: 0, score: 0, picked: null };
+  var qz = { phase: 'start', order: [], i: 0, score: 0, picked: null, wrong: [], review: false };
   function qfmt(s, o) { return String(s).replace(/\{(\w+)\}/g, function (m, k) { return o[k] != null ? o[k] : m; }); }
   function qzItems() { var Q = window.NSK_QUIZ; return Q ? (Q[lang] || Q.it) : null; }
   function qzShuffle(n) {
@@ -1017,6 +1017,8 @@
       if (a === 'go') qzStart();
       else if (a === 'yes' || a === 'no') qzAnswer(a === 'yes');
       else if (a === 'next') qzNext();
+      else if (a === 'rev') { qz.review = true; renderQuiz(true); }
+      else if (a === 'back') { qz.review = false; renderQuiz(true); }
       else if (a === 'save') qzSave();
       else if (a === 'share') qzShare();
     });
@@ -1025,7 +1027,7 @@
   function qzStart() {
     var go = function () {
       if (!window.NSK_QUIZ) { toast(t('lq.err')); return; }
-      qz = { phase: 'play', order: qzShuffle(QN), i: 0, score: 0, picked: null };
+      qz = { phase: 'play', order: qzShuffle(QN), i: 0, score: 0, picked: null, wrong: [], review: false };
       renderQuiz(true);
     };
     if (window.NSK_QUIZ) go(); else loadScript('assets/js/quiz.js', go);
@@ -1033,7 +1035,7 @@
   function qzAnswer(v) {
     var items = qzItems(); if (!items || qz.picked !== null) return;
     qz.picked = v;
-    if (items[qz.order[qz.i]].a === v) qz.score++;
+    if (items[qz.order[qz.i]].a === v) qz.score++; else qz.wrong.push({ k: qz.order[qz.i], p: v });
     renderQuiz(true);
   }
   function qzNext() {
@@ -1074,16 +1076,26 @@
           '<button class="btn btn-primary qz-next" type="button" data-qz="next">' + t(qz.i >= QN - 1 ? 'lq.finish' : 'lq.next') + '</button>';
         foc = '[data-qz="next"]';
       }
+    } else if (qz.review && items) {
+      h = '<div class="qz-rev"><h3>' + qfmt(t('lq.revt'), { n: qz.wrong.length }) + '</h3>';
+      qz.wrong.forEach(function (w) {
+        var it = items[w.k];
+        h += '<div class="qz-ri"><p class="qz-q qz-rq">' + esc(it.q) + '</p><p class="qz-rl"><span class="bad">' + t('lq.you') + ': ' + t(w.p ? 'lq.true' : 'lq.false') +
+          '</span> · <span class="good">' + t('lq.right') + ': ' + t(it.a ? 'lq.true' : 'lq.false') + '</span></p><p class="qz-re">' + esc(it.e) + '</p></div>';
+      });
+      h += '<button class="btn btn-primary" type="button" data-qz="back">' + t('lq.back') + '</button></div>';
+      foc = '[data-qz="back"]';
     } else {
       var C = 2 * Math.PI * 52, off = C * (1 - qz.score / QN);
       h = '<div class="qz-end"><div class="qz-ring"><svg viewBox="0 0 120 120" aria-hidden="true"><defs><linearGradient id="qzg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ff86bd"/><stop offset=".55" stop-color="#b392ff"/><stop offset="1" stop-color="#69f0c1"/></linearGradient></defs>' +
         '<circle cx="60" cy="60" r="52" class="qz-ring-bg"/><circle cx="60" cy="60" r="52" class="qz-ring-fg" stroke-dasharray="' + C.toFixed(1) + '" stroke-dashoffset="' + off.toFixed(1) + '" transform="rotate(-90 60 60)"/></svg>' +
         '<div class="qz-ring-n"><b>' + qz.score + '</b><span>/' + QN + '</span></div></div>' +
-        '<h3>' + t('lq.score') + '</h3><p class="qz-msg">' + qzMsg(qz.score) + '</p><div class="qz-actions">' +
-        '<button class="btn btn-primary" type="button" data-qz="save">' + t('lq.save') + '</button>' +
+        '<h3>' + t('lq.score') + '</h3><p class="qz-msg">' + qzMsg(qz.score) + '</p>' + (qz.wrong.length ? '' : '<p class="qz-msg qz-none">' + t('lq.none') + '</p>') + '<div class="qz-actions">' +
+        (qz.wrong.length ? '<button class="btn btn-primary" type="button" data-qz="rev">' + t('lq.rev') + '</button>' : '') +
+        '<button class="btn ' + (qz.wrong.length ? 'btn-ghost' : 'btn-primary') + '" type="button" data-qz="save">' + t('lq.save') + '</button>' +
         '<button class="btn btn-ghost" type="button" data-qz="share">' + t('lq.share') + '</button>' +
         '<button class="btn btn-ghost" type="button" data-qz="go">' + t('lq.again') + '</button></div></div>';
-      foc = '[data-qz="save"]';
+      foc = qz.wrong.length ? '[data-qz="rev"]' : '[data-qz="save"]';
     }
     box.innerHTML = h;
     if (focus && foc) { var f = $(foc, box); if (f && f.focus) f.focus({ preventScroll: true }); }

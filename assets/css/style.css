@@ -578,3 +578,14 @@ select option, select optgroup { background-color: var(--bg2, #241538); color: v
 .qz-msg { margin: 0; color: var(--muted); max-width: 46ch; line-height: 1.6; }
 .qz-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 8px; }
 @media (max-width: 520px) { .qz-btns { grid-template-columns: 1fr; } }
+
+.qz-rev { display: grid; gap: 18px; }
+.qz-rev h3 { font-family: var(--serif); font-weight: 400; font-size: 1.8rem; margin: 0; }
+.qz-ri { padding: 16px 18px; border-radius: 16px; background: var(--panel); border-left: 4px solid var(--pink); }
+.qz-rq { font-size: clamp(1.15rem, 2.6vw, 1.45rem) !important; margin: 0 0 10px !important; }
+.qz-rl { margin: 0 0 8px; font-weight: 700; font-size: .92rem; }
+.qz-rl .bad { color: var(--pink); }
+.qz-rl .good { color: var(--mint); }
+.qz-re { margin: 0; color: var(--muted); line-height: 1.6; }
+.qz-none { color: var(--mint) !important; font-weight: 700; }
+.qz-rev > .btn { justify-self: start; }
