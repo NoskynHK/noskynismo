@@ -589,3 +589,6 @@ select option, select optgroup { background-color: var(--bg2, #241538); color: v
 .qz-re { margin: 0; color: var(--muted); line-height: 1.6; }
 .qz-none { color: var(--mint) !important; font-weight: 700; }
 .qz-rev > .btn { justify-self: start; }
+
+/* spazio tra etichetta e titolo nelle pagine */
+.page-hero p.kicker { margin: 0 0 18px; }
