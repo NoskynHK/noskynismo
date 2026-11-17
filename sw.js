@@ -1,5 +1,5 @@
 /* Il Noskynismo — service worker: funziona anche con poca connessione */
-const CACHE = 'nsk-v5';
+const CACHE = 'nsk-v6';
 const CORE = ['./', 'index.html', 'assets/css/style.css', 'assets/js/app.js', 'assets/js/i18n.js', 'assets/js/qr.js',
   'assets/img/emblem-96.webp', 'assets/img/emblem-256.webp', 'assets/img/emblem-640.webp',
   'assets/img/favicon.png', 'assets/img/icon-192.png', 'manifest.webmanifest'];
