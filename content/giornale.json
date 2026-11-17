@@ -1,5 +1,14 @@
 [
   {
+    "numero": "2",
+    "etichetta": "Edizione straordinaria",
+    "data": "2026-11-16",
+    "titolo": "La Voce di LeviNosk",
+    "riassunto": "Una nuova era alle porte, Disinnesco mine pre-guerra, Cybersecurity, Crollo valore del rame e Recupero di mostre d'arte perdute.",
+    "copertina": "/assets/img/uploads/screenshot-2026-11-17-193443.png",
+    "pdf": "/assets/docs/Giornale-2026-11-16.pdf"
+  },
+  {
     "numero": "1",
     "etichetta": "Edizione straordinaria",
     "data": "2026-11-09",
