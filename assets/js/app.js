@@ -558,17 +558,18 @@
       var v = $('#tess-code').value.trim(), st = $('#code-status');
       if (!v || lockLeft() > 0) return;
       if (cyrb53(v) === CODE_HASH) {
-        fails = 0; unlocked = true; store.set('nsk-unlocked', '1');
+        fails = 0; unlocked = true;
         showUnlocked(); st.className = 'tess-status'; st.textContent = t('k.code.ok');
         $('#tess-custom').focus();
       } else {
         fails++; $('#tess-code').value = '';
+        unlocked = false; $('#custom-wrap').hidden = true; $('#tess-custom').value = ''; drawCard();
         if (fails >= MAX_TRIES) startLock();
         else { st.className = 'tess-status err'; st.textContent = t('k.code.bad') + ' (' + fails + '/' + MAX_TRIES + ')'; }
       }
     }
     function showUnlocked() { $('#custom-wrap').hidden = false; $('#tess-code').value = ''; }
-    if (store.get('nsk-unlocked') === '1') { unlocked = true; showUnlocked(); }
+    try { localStorage.removeItem('nsk-unlocked'); } catch (e) {}
 
     $('#tess-download').addEventListener('click', downloadCard);
     $('#tess-print').addEventListener('click', printCard);
