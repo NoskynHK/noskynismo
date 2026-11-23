@@ -13,14 +13,15 @@ jobs:
           STATE: ${{ github.event.deployment_status.state }}
           ENVN: ${{ github.event.deployment.environment }}
           ACTOR: ${{ github.event.deployment.creator.login }}
-          LINK: ${{ github.event.deployment_status.target_url }}
+          LOG: ${{ github.event.deployment_status.target_url }}
+          SITE: ${{ github.event.deployment_status.environment_url }}
         run: |
           case "$STATE" in
-            in_progress)   HEAD="🔄 Deploy IN CORSO"; PING="" ;;
-            success)       HEAD="✅ Deploy RIUSCITO"; PING="<@$USER_ID> " ;;
-            failure|error) HEAD="❌ Deploy FALLITO"; PING="<@$USER_ID> " ;;
+            in_progress)   HEAD="🔄 Deploy IN CORSO"; PING=""; LINE="🔗 Dettagli: $LOG" ;;
+            success)       HEAD="✅ Deploy RIUSCITO"; PING="<@$USER_ID> "; LINE="🌐 Vedi il cambiamento sul sito: ${SITE:-$LOG}" ;;
+            failure|error) HEAD="❌ Deploy FALLITO"; PING="<@$USER_ID> "; LINE="🔗 Dettagli dell'errore: $LOG" ;;
             *) exit 0 ;;
           esac
-          TEXT="$PING$HEAD"$'\n'"📁 Repo: $REPO"$'\n'"🌍 Ambiente: $ENVN"$'\n'"👤 Avviato da: $ACTOR"$'\n'"🔗 $LINK"
+          TEXT="$PING$HEAD"$'\n'"📁 Repo: $REPO"$'\n'"🌍 Ambiente: $ENVN"$'\n'"👤 Avviato da: $ACTOR"$'\n'"$LINE"
           jq -n --arg c "$TEXT" '{content: $c}' \
             | curl -s -H "Content-Type: application/json" -d @- "$WEBHOOK"
