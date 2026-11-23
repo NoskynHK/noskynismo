@@ -1,0 +1,19 @@
+name: Discord Notify
+on:
+  push:
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord message
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          USER_ID: ${{ secrets.DISCORD_USER_ID }}
+          REPO: ${{ github.repository }}
+          ACTOR: ${{ github.actor }}
+        run: |
+          TITLES=$(jq -r '.commits[] | "• " + (.message | split("\n")[0])' "$GITHUB_EVENT_PATH")
+          TEXT="<@$USER_ID> 🚀 NUOVO PUSH"$'\n'"📁 Repo: $REPO"$'\n'"🌿 Branch: $GITHUB_REF_NAME"$'\n'"👤 Da: $ACTOR"$'\n'"📝 Commit:"$'\n'"$TITLES"
+          jq -n --arg c "$(echo "$TEXT" | head -c 1900)" '{content: $c}' \
+            | curl -s -H "Content-Type: application/json" -d @- "$WEBHOOK"
