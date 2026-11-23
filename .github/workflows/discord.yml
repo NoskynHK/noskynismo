@@ -12,8 +12,18 @@ jobs:
           USER_ID: ${{ secrets.DISCORD_USER_ID }}
           REPO: ${{ github.repository }}
           ACTOR: ${{ github.actor }}
+          COMPARE: ${{ github.event.compare }}
         run: |
           TITLES=$(jq -r '.commits[] | "• " + (.message | split("\n")[0])' "$GITHUB_EVENT_PATH")
-          TEXT="<@$USER_ID> 🚀 NUOVO PUSH"$'\n'"📁 Repo: $REPO"$'\n'"🌿 Branch: $GITHUB_REF_NAME"$'\n'"👤 Da: $ACTOR"$'\n'"📝 Commit:"$'\n'"$TITLES"
+          OWNER="${REPO%%/*}"; NAME="${REPO##*/}"
+          OWNER="${OWNER,,}"; NAME="${NAME,,}"
+          if [ "$NAME" = "$OWNER.github.io" ]; then
+            SITE="https://$OWNER.github.io/"
+          else
+            SITE="https://$OWNER.github.io/$NAME/"
+          fi
+          # Se usi un dominio personalizzato, togli il # qui sotto e metti il tuo link:
+          # SITE="https://iltuodominio.it"
+          TEXT="<@$USER_ID> 🚀 NUOVO PUSH"$'\n'"📁 Repo: $REPO"$'\n'"🌿 Branch: $GITHUB_REF_NAME"$'\n'"👤 Da: $ACTOR"$'\n'"📝 Commit:"$'\n'"$TITLES"$'\n'"🔍 Vedi le modifiche sul codice: $COMPARE"$'\n'"🌐 Vedi il sito (si aggiorna tra 1-2 minuti): $SITE"
           jq -n --arg c "$(echo "$TEXT" | head -c 1900)" '{content: $c}' \
             | curl -s -H "Content-Type: application/json" -d @- "$WEBHOOK"
