@@ -1,0 +1,26 @@
+name: Discord Deploy Status
+on: deployment_status
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send Discord message
+        env:
+          WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
+          USER_ID: ${{ secrets.DISCORD_USER_ID }}
+          REPO: ${{ github.repository }}
+          STATE: ${{ github.event.deployment_status.state }}
+          ENVN: ${{ github.event.deployment.environment }}
+          ACTOR: ${{ github.event.deployment.creator.login }}
+          LINK: ${{ github.event.deployment_status.target_url }}
+        run: |
+          case "$STATE" in
+            in_progress)   HEAD="🔄 Deploy IN CORSO"; PING="" ;;
+            success)       HEAD="✅ Deploy RIUSCITO"; PING="<@$USER_ID> " ;;
+            failure|error) HEAD="❌ Deploy FALLITO"; PING="<@$USER_ID> " ;;
+            *) exit 0 ;;
+          esac
+          TEXT="$PING$HEAD"$'\n'"📁 Repo: $REPO"$'\n'"🌍 Ambiente: $ENVN"$'\n'"👤 Avviato da: $ACTOR"$'\n'"🔗 $LINK"
+          jq -n --arg c "$TEXT" '{content: $c}' \
+            | curl -s -H "Content-Type: application/json" -d @- "$WEBHOOK"
